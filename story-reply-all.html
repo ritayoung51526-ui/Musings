@@ -1,145 +1,137 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Reply-All Disaster – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Reply-All Disaster – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The Reply-All Disaster</h1>
+<div class="meta">
+<span class="badge short">Short · ~4 min</span>
+<span data-en="Office Life · The Email Everyone Saw" data-zh="辦公室日常 · 全公司都看到的一封信">Office Life · The Email Everyone Saw</span>
+</div>
+</header>
+<div class="hero">Company Inbox · The Reply-All Catastrophe</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">Every office has one unspoken rule that everybody learns the hard way eventually: think twice before you hit "Reply All." I knew this rule. I had heard the horror stories. I simply never imagined I would become one of them.</p>
+<div class="para-trans">每間公司都有一條大家遲早會用血淚學會的潛規則：按下「全部回覆」之前，請三思。我當然知道這條規矩，也聽過不少恐怖故事，只是從沒想過，自己有一天也會變成故事的主角。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">It was a Friday afternoon, the kind where everyone's brain has already mentally clocked out even though their bodies are still sitting at their desks. Our department manager, Mr. Reyes, had just sent out a company-wide email announcing that the office party was postponed—again—for the third time that month.</p>
+<div class="para-trans">那是一個星期五下午，那種所有人的腦袋早已提前下班、身體卻還死守在座位上的時段。我們的部門經理雷耶斯先生剛剛發出一封全公司通告，宣布辦公室派對又要延期了——這已經是那個月第三次延期。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I was <span class="vocab" data-eg="exasperated by the third postponement" data-meaning="極度惱怒、不耐煩" data-phonetic="/ɪɡˈzæs.pə.reɪ.tɪd/" data-pos="adjective" data-word="exasperated">exasperated</span>. I meant to forward the announcement to my one close friend on the team, Priya, with a little private complaint attached. Something like, "he does this every single time, I'm losing my mind."</p>
+<div class="para-trans">我當時真的是氣到不行。我原本只想把這封公告轉寄給團隊裡唯一的知心好友普莉雅，並附上一句私底下的小抱怨：「他每次都這樣，我快瘋了。」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Except my cursor, apparently possessed by some chaotic office gremlin, landed on "Reply All" instead of "Forward." I typed my message, hit send with the satisfying confidence of someone venting to a trusted friend, and went back to sipping my lukewarm coffee.</p>
+<div class="para-trans">結果我的滑鼠游標，彷彿被辦公室裡某個搗蛋小鬼附身一樣，竟然點到了「全部回覆」而不是「轉寄」。我打完那句抱怨，帶著向知己吐槽的踏實感放心按下送出，然後心滿意足地繼續喝我那杯已經涼掉的咖啡。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Thirty seconds later, my phone buzzed. Then it buzzed again. And again. I looked down to see a growing chain of confused reaction emojis from coworkers I had never even spoken to, popping up one after another like popcorn.</p>
+<div class="para-trans">三十秒後，我的手機震動了一下。接著又震動了一下，然後再一下。我低頭一看，發現一連串困惑的表情符號回覆，正從那些我從未講過話的同事帳號裡，像爆米花一樣一個接一個彈出來。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Then I saw it. My name, right at the top of the recipient list. Two hundred and fourteen people. Including Mr. Reyes himself. Including his boss. My stomach dropped somewhere around the basement parking level of our office building.</p>
+<div class="para-trans">然後我看到了。我的名字，赫然出現在收件人名單的最頂端。兩百一十四個人。包括雷耶斯先生本人，也包括他的上司。我的胃瞬間往下墜，一路沉到辦公大樓地下停車場那麼深。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">My phone rang almost immediately. It was Mr. Reyes. In a voice that was frighteningly calm, he simply said, "My office. Now, please." I have never walked so slowly and so fast at the same time in my entire life.</p>
+<div class="para-trans">我的手機幾乎是立刻響起。是雷耶斯先生打來的。他用一種可怕的平靜語氣，只說了一句：「來我辦公室，現在，麻煩你了。」我這輩子從來沒有一次走路，同時走得那麼慢，又那麼快。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">To my absolute shock, when I sat down across from his desk expecting a lecture, he was quietly laughing. "I know it happens every month," he admitted. "Honestly, I'm getting tired of postponing it too. Just... maybe use 'Forward' next time?"</p>
+<div class="para-trans">令我萬分震驚的是，當我坐到他辦公桌對面、做好心理準備迎接一頓訓話時，他竟然在偷笑。「我知道這事每個月都在發生，」他坦承道：「老實說，我自己也對一直延期感到厭煩。只是……下次或許可以改用『轉寄』？」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I survived. My dignity, however, did not. For the next two weeks, random coworkers I'd never met would nod at me in the hallway with knowing little smiles, and I'd just nod back, pretending I had absolutely no idea what they were smiling about.</p>
+<div class="para-trans">我活下來了。只是我的尊嚴，並沒有。接下來整整兩個星期，走廊上不斷有從未打過交道的同事對我露出心照不宣的微笑點頭示意，而我只能回以點頭，假裝完全不知道他們在笑什麼。</div>
+</div>
+</article>
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. What did the narrator actually mean to do with the email?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Delete it entirely</button>
+<button class="quiz-opt" data-correct="true">B) Forward it privately to one close friend, Priya</button>
+<button class="quiz-opt" data-correct="false">C) Print it out for the manager</button>
+<button class="quiz-opt" data-correct="false">D) Reply only to Mr. Reyes</button>
+</div>
+<div class="quiz-feedback" data-explain="主角原本只是想把公告私下轉寄給好友普莉雅，並附上一句小抱怨，卻不小心點成了「全部回覆」。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. What does "exasperated" mean in this story?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Extremely excited and happy</button>
+<button class="quiz-opt" data-correct="true">B) Very annoyed and frustrated</button>
+<button class="quiz-opt" data-correct="false">C) Completely confused</button>
+<button class="quiz-opt" data-correct="false">D) Sleepy and tired</button>
+</div>
+<div class="quiz-feedback" data-explain="「Exasperated」指極度惱怒、不耐煩，形容主角對於派對一再延期感到非常煩躁。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. How did Mr. Reyes actually react when the narrator came to his office?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) He gave a formal written warning</button>
+<button class="quiz-opt" data-correct="false">B) He fired the narrator on the spot</button>
+<button class="quiz-opt" data-correct="true">C) He quietly laughed and admitted he agreed with the complaint</button>
+<button class="quiz-opt" data-correct="false">D) He forwarded the email to even more people</button>
+</div>
+<div class="quiz-feedback" data-explain="出乎意料地，雷耶斯先生並沒有動怒，反而偷偷笑了，坦承自己也對一再延期的派對感到厭煩。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Reply-All Disaster</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~4 min</span>
-        <span data-en="Office Life · The Email Everyone Saw" data-zh="辦公室日常 · 全公司都看到的一封信">Office Life · The Email Everyone Saw</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Company Inbox · The Reply-All Catastrophe</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">Every office has one unspoken rule that everybody learns the hard way eventually: think twice before you hit "Reply All." I knew this rule. I had heard the horror stories. I simply never imagined I would become one of them.</p>
-        <div class="para-trans">每間公司都有一條大家遲早會用血淚學會的潛規則：按下「全部回覆」之前，請三思。我當然知道這條規矩，也聽過不少恐怖故事，只是從沒想過，自己有一天也會變成故事的主角。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">It was a Friday afternoon, the kind where everyone's brain has already mentally clocked out even though their bodies are still sitting at their desks. Our department manager, Mr. Reyes, had just sent out a company-wide email announcing that the office party was postponed—again—for the third time that month.</p>
-        <div class="para-trans">那是一個星期五下午，那種所有人的腦袋早已提前下班、身體卻還死守在座位上的時段。我們的部門經理雷耶斯先生剛剛發出一封全公司通告，宣布辦公室派對又要延期了——這已經是那個月第三次延期。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I was <span class="vocab" data-word="exasperated" data-pos="adjective" data-phonetic="/ɪɡˈzæs.pə.reɪ.tɪd/" data-meaning="極度惱怒、不耐煩" data-eg="exasperated by the third postponement">exasperated</span>. I meant to forward the announcement to my one close friend on the team, Priya, with a little private complaint attached. Something like, "he does this every single time, I'm losing my mind."</p>
-        <div class="para-trans">我當時真的是氣到不行。我原本只想把這封公告轉寄給團隊裡唯一的知心好友普莉雅，並附上一句私底下的小抱怨：「他每次都這樣，我快瘋了。」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Except my cursor, apparently possessed by some chaotic office gremlin, landed on "Reply All" instead of "Forward." I typed my message, hit send with the satisfying confidence of someone venting to a trusted friend, and went back to sipping my lukewarm coffee.</p>
-        <div class="para-trans">結果我的滑鼠游標，彷彿被辦公室裡某個搗蛋小鬼附身一樣，竟然點到了「全部回覆」而不是「轉寄」。我打完那句抱怨，帶著向知己吐槽的踏實感放心按下送出，然後心滿意足地繼續喝我那杯已經涼掉的咖啡。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Thirty seconds later, my phone buzzed. Then it buzzed again. And again. I looked down to see a growing chain of confused reaction emojis from coworkers I had never even spoken to, popping up one after another like popcorn.</p>
-        <div class="para-trans">三十秒後，我的手機震動了一下。接著又震動了一下，然後再一下。我低頭一看，發現一連串困惑的表情符號回覆，正從那些我從未講過話的同事帳號裡，像爆米花一樣一個接一個彈出來。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Then I saw it. My name, right at the top of the recipient list. Two hundred and fourteen people. Including Mr. Reyes himself. Including his boss. My stomach dropped somewhere around the basement parking level of our office building.</p>
-        <div class="para-trans">然後我看到了。我的名字，赫然出現在收件人名單的最頂端。兩百一十四個人。包括雷耶斯先生本人，也包括他的上司。我的胃瞬間往下墜，一路沉到辦公大樓地下停車場那麼深。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">My phone rang almost immediately. It was Mr. Reyes. In a voice that was frighteningly calm, he simply said, "My office. Now, please." I have never walked so slowly and so fast at the same time in my entire life.</p>
-        <div class="para-trans">我的手機幾乎是立刻響起。是雷耶斯先生打來的。他用一種可怕的平靜語氣，只說了一句：「來我辦公室，現在，麻煩你了。」我這輩子從來沒有一次走路，同時走得那麼慢，又那麼快。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">To my absolute shock, when I sat down across from his desk expecting a lecture, he was quietly laughing. "I know it happens every month," he admitted. "Honestly, I'm getting tired of postponing it too. Just... maybe use 'Forward' next time?"</p>
-        <div class="para-trans">令我萬分震驚的是，當我坐到他辦公桌對面、做好心理準備迎接一頓訓話時，他竟然在偷笑。「我知道這事每個月都在發生，」他坦承道：「老實說，我自己也對一直延期感到厭煩。只是……下次或許可以改用『轉寄』？」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I survived. My dignity, however, did not. For the next two weeks, random coworkers I'd never met would nod at me in the hallway with knowing little smiles, and I'd just nod back, pretending I had absolutely no idea what they were smiling about.</p>
-        <div class="para-trans">我活下來了。只是我的尊嚴，並沒有。接下來整整兩個星期，走廊上不斷有從未打過交道的同事對我露出心照不宣的微笑點頭示意，而我只能回以點頭，假裝完全不知道他們在笑什麼。</div>
-      </div>
-    </article>
-
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. What did the narrator actually mean to do with the email?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Delete it entirely</button>
-          <button class="quiz-opt" data-correct="true">B) Forward it privately to one close friend, Priya</button>
-          <button class="quiz-opt" data-correct="false">C) Print it out for the manager</button>
-          <button class="quiz-opt" data-correct="false">D) Reply only to Mr. Reyes</button>
-        </div>
-        <div class="quiz-feedback" data-explain="主角原本只是想把公告私下轉寄給好友普莉雅，並附上一句小抱怨，卻不小心點成了「全部回覆」。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. What does "exasperated" mean in this story?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Extremely excited and happy</button>
-          <button class="quiz-opt" data-correct="true">B) Very annoyed and frustrated</button>
-          <button class="quiz-opt" data-correct="false">C) Completely confused</button>
-          <button class="quiz-opt" data-correct="false">D) Sleepy and tired</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Exasperated」指極度惱怒、不耐煩，形容主角對於派對一再延期感到非常煩躁。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. How did Mr. Reyes actually react when the narrator came to his office?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) He gave a formal written warning</button>
-          <button class="quiz-opt" data-correct="false">B) He fired the narrator on the spot</button>
-          <button class="quiz-opt" data-correct="true">C) He quietly laughed and admitted he agreed with the complaint</button>
-          <button class="quiz-opt" data-correct="false">D) He forwarded the email to even more people</button>
-        </div>
-        <div class="quiz-feedback" data-explain="出乎意料地，雷耶斯先生並沒有動怒，反而偷偷笑了，坦承自己也對一再延期的派對感到厭煩。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

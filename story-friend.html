@@ -1,219 +1,196 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Friend Who Sat Too Close – Embarrassing Moments</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Friend Who Sat Too Close – Embarrassing Moments</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav"><a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a><button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button></div>
+<div class="container">
+<div class="top-nav"><a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a><button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button></div>
+<header>
+<h1>The Friend Who Sat Too Close</h1>
+<div class="meta">
+<span class="badge long">Long · ~20 min</span>
+<span>友情與暗戀風波 · Café · Three Friends</span>
+</div>
+</header>
+<div class="hero">Café · Three Friends</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 語音朗讀</button>
+<button class="btn secondary" id="dictToggleBtn">📖 生字字典: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 中文翻譯: OFF</button>
+</div>
+<!-- Voice TTS Player Bar -->
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">語音就緒</span>
+<div class="speed-group">
+<span>語速:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x (學習)</button>
+<button class="speed-btn" data-speed="0.95">0.95x (自然)</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ 播放 (Play)</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ 停止 (Stop)</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">💡 小提示：點擊任何一段英文可即時跳播！</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">We were supposed to be celebrating the end of <span class="vocab" data-eg="celebrating the end of midterms" data-meaning="期中考試" data-phonetic="/ˈmɪd.tɝːmz/" data-pos="noun" data-word="midterms">midterms</span>.</p>
+<div class="para-trans">我們那晚本該是為了慶祝期中考結束。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">A group of us had been talking about it for a week—nothing fancy, just the café near campus that stayed open late and didn’t mind if you <span class="vocab" data-eg="occupied a table for three hours" data-meaning="霸佔一張枱、坐很長時間" data-phonetic="/ˈɑː.kjə.paɪd/" data-pos="phrase" data-word="occupied a table">occupied a table</span> for three hours as long as you ordered something <span class="vocab" data-eg="ordered something every now and then" data-meaning="時不時、偶爾" data-phonetic="/ˈev.ri naʊ ænd ðen/" data-pos="phrase" data-word="every now and then">every now and then</span>. Someone suggested we invite Leo. Someone else said sure, why not. I said nothing. I just nodded and pretended the idea of him being there didn’t make my stomach do a slow, careful <span class="vocab" data-eg="make my stomach do a slow, careful flip" data-meaning="翻騰、小鹿亂撞（緊張暗戀的心跳感）" data-phonetic="/flɪp/" data-pos="noun" data-word="flip">flip</span>.</p>
+<div class="para-trans">我們一群人討論了整整一週——並不是什麼高級去處，只是校園附近那家營業到深夜的咖啡館。只要你偶爾點上一杯飲品，店員便不會介意你佔用桌子三個小時。有人提議叫上里奧。其他人紛紛附和。我什麼也沒說，只是點了點頭，假裝一想到他也會來，自己的胃裡並沒有傳來一陣翻江倒海的悸動。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Leo was the kind of person who made ordinary rooms feel slightly brighter. Not because he tried. He just existed in a way that <span class="vocab" data-eg="pulled attention without demanding it" data-meaning="自然吸引眾人目光" data-phonetic="/pʊld əˈten.ʃən/" data-pos="phrase" data-word="pulled attention">pulled attention</span> without <span class="vocab" data-eg="without demanding it" data-meaning="刻意強求、主動索取" data-phonetic="/dɪˈmæn.dɪŋ/" data-pos="phrase" data-word="demanding it">demanding it</span>. I’d been carefully not staring at him for three months. Maya knew. She’d known since the first week of semester, when I made the mistake of looking at him a second too long while he was talking about some documentary he’d watched. She’d raised one eyebrow at me across the table and I’d looked away so fast I almost <span class="vocab" data-eg="almost pulled a muscle in my neck" data-meaning="扭傷肌肉 (幽默誇張形容轉頭轉得太快)" data-phonetic="/pʊld ə ˈmʌs.əl/" data-pos="phrase" data-word="pulled a muscle">pulled a muscle</span> in my neck.</p>
+<div class="para-trans">里奧是那種只要走進房間，就會讓平凡空間瞬間明亮起來的人。並非因為他刻意表現，而是他身上自帶一種不著痕跡卻能吸引全場目光的氣場。我小心翼翼地克制自己不要盯著他看，已經整整三個月了。瑪雅是知道的。她從開學第一週就察覺到了，當時只因里奧聊起一部紀錄片，我不自覺地多看了他一秒。瑪雅隔著桌子向我挑了挑眉，我嚇得猛然轉過頭去，速度快得差點扭傷脖子。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Maya also had a boyfriend. His name was Jordan and he was out of town that weekend for a family thing. I remember thinking, when she mentioned it casually over lunch, that it shouldn’t matter. Friends were allowed to talk to other people. Friends were allowed to laugh at other people’s jokes. The fact that my chest tightened a little when she said Jordan wouldn’t be around was my problem, not hers.</p>
+<div class="para-trans">然而瑪雅是有男朋友的。她的男友名叫喬丹，那個週末剛好回老家處理家事。我記得午餐時她隨口提及，當時我還告訴自己：這沒什麼大不了的，朋友之間與異性聊天很正常，對別人的笑話發笑也理所應當。聽到喬丹不在時我胸口泛起的那一絲緊繃，是我自己的問題，與她無關。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Somehow she ended up sitting next to Leo the entire time.</p>
+<div class="para-trans">然而不知何故，整整一個晚上，她偏偏就坐在里奧的身旁。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">At first I told myself it was fine. The table was crowded. Seats were limited. People shifted around as more of the group arrived. But then she started laughing at every joke he made, even the ones that weren’t particularly funny. She touched his arm when she leaned in to say something. She asked him what his type was, tilting her head like it was the most casual question in the world, and waited for his answer with an expression I recognized from years of knowing her.</p>
+<div class="para-trans">起初我安慰自己說這沒什麼。長桌很擠，座位有限，隨著聚會人數增加，大家挪動位置再正常不過。但接下來，里奧講的每一個笑話她都笑得花枝亂顫，哪怕有些笑話根本毫無笑點。當她湊近說話時，總會若有若無地觸碰他的手臂。她側著頭詢問里奧喜歡什麼類型的女孩，語氣無比隨意，隨後用一種相識多年的我極為熟悉的眼神，靜靜等待著對方的回答。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I tried to stay normal. I really did. I talked to the person on my other side about the exam that had nearly destroyed us. I ordered another drink I didn’t need. I smiled when someone made a joke about the professor’s handwriting. But every few minutes my eyes would drift back to the other end of the table, where Maya was still angled toward Leo like the rest of us had <span class="vocab" data-eg="like the rest of us had faded into background noise" data-meaning="淪為背景雜音、完全被當透明" data-phonetic="/feɪd ˈɪn.tuː ˈbæk.ɡraʊnd nɔɪz/" data-pos="idiom" data-word="faded into background noise">faded into background noise</span>.</p>
+<div class="para-trans">我極力表現得一切如常，真的竭盡全力了。我拉著身旁的同學，熱切地討論著那份差點把我們逼瘋的期中試卷。我點了一杯自己根本不需要的飲品。有人拿教授難辨的板書開玩笑時，我也跟著附和微笑。但每隔幾分鐘，我的目光總是不由自主地飄向長桌的另一端——瑪雅整個身體依然朝里奧傾斜著，彷彿我們其餘所有人，都早已化作了無足輕重的背景雜音。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">By the time we decided to leave, the sky outside had gone fully dark. The café lights looked warmer against the windows. Someone offered to drive because the buses had already stopped running as frequently. We all piled into one car because it was easier than splitting up. I ended up in the front passenger seat. Maya climbed into the back without hesitation and slid in next to Leo, close enough that their shoulders almost touched.</p>
+<div class="para-trans">等到大家決定離開時，窗外的夜空已徹底陷入黑暗。咖啡館的暖黃燈光倒映在玻璃上，顯得格外溫柔。有人主動提出開車送大家回宿舍，因為深夜的公車班次已經大幅減少。為了省事，我們所有人擠進了同一輛車。我坐在了副駕駛座。而瑪雅毫無猶豫地鑽進了後座，緊緊挨著里奧坐下，距離近得兩人的肩膀幾乎相互挨擦。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">That was the moment something in me <span class="vocab" data-eg="something in me snapped" data-meaning="理智斷線、忍無可忍爆發" data-phonetic="/snæpt/" data-pos="verb" data-word="snapped">snapped</span>.</p>
+<div class="para-trans">就在那一瞬間，我心中壓抑已久的理智徹底崩斷了。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I don’t remember deciding to speak. The words just arrived, fully formed, like they’d been waiting behind my teeth all evening. “Okay Maya,” I said, loud enough for the whole car to hear. “I see you. Girl with the boyfriend, I see you.”</p>
+<div class="para-trans">我甚至不記得自己何時決定開口。那些字句彷彿整晚都潛伏在我的齒縫之間，未經思索便脫口而出：「行啊瑪雅，」我提高了音量，大聲到全車每個人都能清晰聽見：「我都看在眼裡呢。那位有男朋友的女孩，我可都看在眼裡。」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I said it twice. The second time sounded even worse than the first—sharper, more <span class="vocab" data-eg="more deliberate, impossible to pretend had been a joke" data-meaning="故意的、刻意的" data-phonetic="/dɪˈlɪb.ɚ.ət/" data-pos="adjective" data-word="deliberate">deliberate</span>, impossible to pretend had been a joke.</p>
+<div class="para-trans">我一字一句地重覆了兩遍。第二次的語氣比第一次更顯刻薄、更加蓄意，徹底撕破了任何偽裝成開玩笑的可能。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The car went quiet in a way that felt physical. The music from the radio suddenly seemed too loud and then not loud enough. Leo looked out the window, his profile still against the passing streetlights. Maya’s face, in the <span class="vocab" data-eg="in the rearview mirror" data-meaning="後照鏡、車內倒後鏡" data-phonetic="/ˈrɪr.vjuː ˈmɪr.ɚ/" data-pos="noun" data-word="rearview mirror">rearview mirror</span>, went red and then carefully blank, the expression she used when she was deciding whether something was worth fighting about. The driver cleared his throat and turned the volume up a little, like noise could fix whatever had just broken between the seats.</p>
+<div class="para-trans">車廂內頓時陷入了一種具備實體壓迫感的死寂。收音機飄出的音樂突然顯得刺耳無比，隨後又顯得不足以打破沉悶。里奧轉過頭望向窗外，側臉在路燈流光下紋絲不動。而在後照鏡中，瑪雅的臉色先是一陣通紅，旋即轉為極力克制的漠然——那是她在盤算眼下究竟值不值得大鬧一場時的慣常神態。駕駛清了清喉嚨，悄悄調高了一點音量，似乎想用噪音縫補前後座之間瞬間破碎的裂痕。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">No one said anything for the rest of the ride. The silence sat between us like a fourth passenger. I stared at my hands in my lap and counted the seconds until we reached the dorms. Every red light felt longer than the last.</p>
+<div class="para-trans">在剩下的路程中，沒有人再說一句話。冰冷的沉默宛如第四位乘客，沉甸甸地擠在我們當中。我低頭盯著放在膝蓋上的雙手，在一秒秒的煎熬中計算著回到宿舍的時間。眼前的每一個紅燈，都顯得比上一個更為漫長。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">When we got back, Maya pulled me aside before I could reach the stairs. The hallway light was too bright, the kind of <span class="vocab" data-eg="the kind of fluorescent that made everything look slightly wrong" data-meaning="日光燈的、慘白的" data-phonetic="/flɔːˈres.ənt/" data-pos="adjective" data-word="fluorescent">fluorescent</span> that made everything look slightly wrong. Someone’s door was open further down the corridor, spilling laughter and music that felt like it belonged to a completely different night, one where nothing awkward had happened.</p>
+<div class="para-trans">抵達宿舍後，在我踏上樓梯之前，瑪雅一把將我拽到了一旁。走廊上的日光燈亮得刺眼，那種冰冷的慘白光線讓一切看起來都帶著扭曲的違和感。走廊盡頭有扇房門虛掩著，溢出歡聲笑語與音樂，聽起來恍若屬於另一個截然不同的夜晚——一個什麼尷尬醜態都不曾發生過的平行時空。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“You embarrassed me in front of him,” she said. Her voice was low and tight, the way it got when she was genuinely angry and trying not to let it show too much.</p>
+<div class="para-trans">「你剛才當著他的面讓我下不了台，」她說道。她的聲音低沉而緊繃，正是她真正怒不可遏卻極力按捺時的獨特聲線。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“You spent the entire night <span class="vocab" data-eg="spent the entire night acting single" data-meaning="扮單身、表現得好似冇伴侶咁" data-phonetic="/ˈæktɪŋ ˈsɪŋ.ɡəl/" data-pos="phrase" data-word="acting single">acting single</span>,” I answered. I hated how my voice sounded—<span class="vocab" data-eg="defensive, shaky" data-meaning="戒備防衛的、語氣帶刺的" data-phonetic="/dɪˈfen.sɪv/" data-pos="adjective" data-word="defensive">defensive</span>, shaky, younger than I wanted it to be. Like I was still the version of myself who needed her to like me more than I needed to be right.</p>
+<div class="para-trans">「你整晚都在那裡假裝自己是單身！」我反駁道。我厭惡自己當時的聲音——防備、顫抖，聽起來遠比我想像的要幼稚脆弱。彷彿我依舊是那個比起捍衛底線、更在乎能否討她歡心的卑微朋友。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">She stared at me for a second, eyes searching my face like she was looking for the friend she thought she’d arrived with. Then she shook her head once, a small sharp movement, and turned away. I stood there until the stairwell door clicked shut behind her. The sound echoed longer than it should have.</p>
+<div class="para-trans">她凝視了我片刻，目光在我臉上不斷游移，彷彿試圖辨認出出門時原本與她同行的那個朋友。隨後她用力搖了搖頭，轉身離去。我站在原地，直到樓梯間的沉重防火門咔嗒一聲合上，那聲悶響在空蕩的走廊裡迴盪了許久。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">That night I lay awake <span class="vocab" data-eg="replaying every second" data-meaning="倒帶重播、在腦海中反覆回想" data-phonetic="/ˌriːˈpleɪ.ɪŋ/" data-pos="verb" data-word="replaying">replaying every second</span>. The way Leo had looked when I said those words—not angry, not amused, just quietly uncomfortable, like he’d been forced to witness something he didn’t ask for. The way Maya’s shoulders had drawn in. The silence that followed us all the way home and then settled into the space between our rooms. I wasn’t even sure who I was more upset with—her for crossing a line she knew existed, or myself for making the whole thing public in the worst possible way.</p>
+<div class="para-trans">那一晚我徹夜難眠，在腦海中一秒一秒地倒帶重溫著每個細節。里奧在我說出那句話時的眼神——沒有憤怒，也沒有覺得有趣，純粹是一種被迫捲入鬧劇的尷尬與難堪。瑪雅緊繃收縮的肩膀。一路尾隨我們回到宿舍、最終凝固在兩扇房門之間的冰冷死寂。我甚至不知道自己究竟更生誰的氣——是氣她明知我的心意卻依然肆無忌憚地跨界，還是氣我自己用了一種最醜陋、最不堪的方式將友情當眾撕碎。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I kept thinking about the version of the night that could have happened instead. The one where I stayed quiet. The one where I laughed along with everyone else and let the small jealous feeling sit in my chest without giving it a voice. The one where I went home with my <span class="vocab" data-eg="went home with my dignity intact" data-meaning="體面完好、保留尊嚴" data-phonetic="/ˈdɪɡ.nə.t̬i ɪnˈtækt/" data-pos="phrase" data-word="dignity intact">dignity intact</span> and texted her something normal the next morning. It felt so close I could almost touch it. One different choice and the entire evening would have ended differently.</p>
+<div class="para-trans">我不停地構想著那個夜晚本可能發生的另一個版本。在那個版本裡，我始終保持安靜；我跟著眾人一同微笑，任由那股微弱的酸澀嫉妒沉澱在胸口而未獲發洩；在那個版本裡，我帶著完好無損的體面回到房間，隔天早晨還能若無其事地給她發一條日常訊息。那個選擇近在咫尺，只要當時換了一念之差，整個夜晚的軌跡便會截然不同。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The next day Leo said hi to me in the hallway like nothing had happened. His smile was the same as always—easy, a little distracted, completely unaware of the small disaster I’d created in his presence the night before. I said hi back and kept walking. Maya didn’t text. She didn’t appear at our usual table in the dining hall. By the third day the absence had settled into something heavy and familiar, the kind of quiet that starts to feel permanent even when you tell yourself it isn’t.</p>
+<div class="para-trans">第二天，里奧在走廊上迎面遇見我，神情自若地打了個招呼。他的笑容依舊如常——輕鬆、帶著少許心不在焉，絲毫未察覺前一晚因他在場而引爆了一場怎樣的人際災難。我淡淡回應了一句便快步走開。瑪雅沒有發來任何訊息，也未曾出現在學生餐廳我們慣坐的餐桌旁。到了第三天，這種缺席已化作一種沉甸甸且熟悉的壓抑感，那是一種哪怕你極力自我安慰、卻深知很可能演變為永久決裂的死寂。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I told myself it would <span class="vocab" data-eg="told myself it would blow over" data-meaning="（風波、爭吵）平息過去、隨時間淡化" data-phonetic="/bloʊ ˈoʊ.vɚ/" data-pos="phrasal verb" data-word="blow over">blow over</span>. Friendships survived worse. People said stupid things when they were tired and jealous and twenty years old. We would talk eventually. We always did. That was the story I repeated to myself while I brushed my teeth and while I walked to class and while I lay in bed staring at the ceiling at two in the morning. But every time my phone lit up with a notification that wasn’t from her, something small and sharp twisted under my ribs.</p>
+<div class="para-trans">我一再告訴自己這一切終會過去。朋友之間經歷過更大的摩擦也總能和好如初。二十歲出頭的年輕人在疲憊與嫉妒的催化下難免會說些蠢話。我們遲早會重歸於好，以前每次都是如此。無論是在刷牙時、走去上課的路上，還是在凌晨兩點凝視著天花板的失眠中，我一遍又一遍地對自己重複著這套說辭。但每當手機螢幕亮起、跳出的通知卻不是來自她時，我的心口下方依然會泛起一陣鋒利而尖銳的隱痛。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Leo still sits at the same table sometimes when our schedules overlap. Maya still exists in the same group chats, her name appearing under messages about assignments and weekend plans that no longer include me the way they used to. I still know exactly how many days it’s been since she last looked at me like I was someone she trusted without question. And every time I walk past the café where it started, I remember the exact second the words left my mouth—too loud, too sharp, impossible to take back. I remember the way the car went quiet. I remember the weight of the silence that followed us home.</p>
+<div class="para-trans">課表重疊的日子裡，里奧偶爾仍會坐在同一張桌旁。瑪雅依然留在同一個群組裡，她的名字依舊會出現在討論作業與週末計畫的聊天串中，只是那些聚會計畫再也沒有像從前那樣將我算在其中。我清楚記得究竟過去了多少天，她再也沒有用那種毫无芥蒂、全心信任的目光看過我。每當我走過那家當初聚會的咖啡館，依然能清晰憶起那些話衝出口的那一秒——太過響亮、過於尖刻、覆水難收。我記得車廂陷入冰點的那一刻，更記得那股一路跟隨我們回家的沉重寂靜。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Sometimes I still catch myself <span class="vocab" data-eg="rehearsing the apology I never gave" data-meaning="在腦海中反覆排練預演" data-phonetic="/rəˈhɝː.sɪŋ/" data-pos="verb" data-word="rehearsing">rehearsing</span> the apology I never gave and the explanation I never asked for. Other times I practice letting the whole thing stay unfinished. Neither feels like <span class="vocab" data-eg="Neither feels like closure." data-meaning="釋懷、情感上的圓滿了結" data-phonetic="/ˈkloʊ.ʒɚ/" data-pos="noun" data-word="closure">closure</span>. Both feel like the only options left.</p>
+<div class="para-trans">有時我依然會發覺自己在心中反覆演練著那份從未說出口的道歉，以及那段我從未追問過的解釋。有時我又試圖學著接受這段關係就此懸而未決。這兩種選擇都無法帶來真正的釋懷，但它們偏偏成了橫亙在眼前的僅剩選項。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I don’t know if we’re going to fix it. I don’t know if we’re supposed to. All I know is that one night, in a car full of people I thought I knew, I said something I can’t unsay—and the quiet that came after has been louder than anything else since.</p>
+<div class="para-trans">我不知道我們是否還能修補這段友情，甚至不知道究竟是否該去修補。我唯一知道的是，在那個坐滿了我自以為熟識之人的車廂裡，我說出了一句永遠無法收回的話——而自那一刻起蔓延至今的寂靜，遠比這世上的一切聲響都要震耳欲聾。</div>
+</div>
+</article>
+<!-- Quick Quiz Section -->
+<section class="quiz-section">
+<div class="quiz-header">
+<h2>💡 Quick Quiz (小測試)</h2>
+<p>測下自己學到幾多地道英文詞彙同理解情節！</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. What does "something in me snapped" describe in the car?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The narrator broke her car seat belt</button>
+<button class="quiz-opt" data-correct="true">B) She suddenly lost emotional control after holding back her jealousy all night</button>
+<button class="quiz-opt" data-correct="false">C) She snapped a candid picture on her phone</button>
+<button class="quiz-opt" data-correct="false">D) Her necklace broke into pieces</button>
+</div>
+<div class="quiz-feedback" data-explain="「Something snapped」形容「某人突然理智斷線、無法再隱忍情緒」。主角積聚咗成晚嘅嫉妒與怨氣，喺車內瞬間爆發。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. Why was Maya furious with the narrator after returning to the dorm?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The narrator refused to split the cab fare</button>
+<button class="quiz-opt" data-correct="true">B) The narrator called her out publicly in front of Leo and everyone in the car</button>
+<button class="quiz-opt" data-correct="false">C) The narrator spilled iced coffee on Maya's jacket</button>
+<button class="quiz-opt" data-correct="false">D) Maya failed her midterm exam</button>
+</div>
+<div class="quiz-feedback" data-explain="Maya 憤怒嘅原因係主角喺車入面眾人面前指責佢「Girl with the boyfriend, I see you... acting single」，令佢當眾無地自容。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. What does "closure" mean when the narrator reflects on the broken friendship?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Locking the dorm room door</button>
+<button class="quiz-opt" data-correct="false">B) Ending the semester classes</button>
+<button class="quiz-opt" data-correct="true">C) An emotional resolution or peace that allows you to move on</button>
+<button class="quiz-opt" data-correct="false">D) A business deal agreement</button>
+</div>
+<div class="quiz-feedback" data-explain="「Closure」指「心靈上嘅了結、釋懷」。故事中無論係私下道歉定係就此放任不管，都無法帶嚟真正嘅釋懷。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Friend Who Sat Too Close</h1>
-      <div class="meta">
-        <span class="badge long">Long · ~20 min</span>
-        <span>友情與暗戀風波 · Café · Three Friends</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Café · Three Friends</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 語音朗讀</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 生字字典: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 中文翻譯: OFF</button>
-    </div>
-
-    <!-- Voice TTS Player Bar -->
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">語音就緒</span>
-        <div class="speed-group">
-          <span>語速:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x (學習)</button>
-          <button class="speed-btn" data-speed="0.95">0.95x (自然)</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ 播放 (Play)</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ 停止 (Stop)</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">💡 小提示：點擊任何一段英文可即時跳播！</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">We were supposed to be celebrating the end of <span class="vocab" data-word="midterms" data-pos="noun" data-phonetic="/ˈmɪd.tɝːmz/" data-meaning="期中考試" data-eg="celebrating the end of midterms">midterms</span>.</p>
-        <div class="para-trans">我們那晚本該是為了慶祝期中考結束。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">A group of us had been talking about it for a week—nothing fancy, just the café near campus that stayed open late and didn’t mind if you <span class="vocab" data-word="occupied a table" data-pos="phrase" data-phonetic="/ˈɑː.kjə.paɪd/" data-meaning="霸佔一張枱、坐很長時間" data-eg="occupied a table for three hours">occupied a table</span> for three hours as long as you ordered something <span class="vocab" data-word="every now and then" data-pos="phrase" data-phonetic="/ˈev.ri naʊ ænd ðen/" data-meaning="時不時、偶爾" data-eg="ordered something every now and then">every now and then</span>. Someone suggested we invite Leo. Someone else said sure, why not. I said nothing. I just nodded and pretended the idea of him being there didn’t make my stomach do a slow, careful <span class="vocab" data-word="flip" data-pos="noun" data-phonetic="/flɪp/" data-meaning="翻騰、小鹿亂撞（緊張暗戀的心跳感）" data-eg="make my stomach do a slow, careful flip">flip</span>.</p>
-        <div class="para-trans">我們一群人討論了整整一週——並不是什麼高級去處，只是校園附近那家營業到深夜的咖啡館。只要你偶爾點上一杯飲品，店員便不會介意你佔用桌子三個小時。有人提議叫上里奧。其他人紛紛附和。我什麼也沒說，只是點了點頭，假裝一想到他也會來，自己的胃裡並沒有傳來一陣翻江倒海的悸動。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Leo was the kind of person who made ordinary rooms feel slightly brighter. Not because he tried. He just existed in a way that <span class="vocab" data-word="pulled attention" data-pos="phrase" data-phonetic="/pʊld əˈten.ʃən/" data-meaning="自然吸引眾人目光" data-eg="pulled attention without demanding it">pulled attention</span> without <span class="vocab" data-word="demanding it" data-pos="phrase" data-phonetic="/dɪˈmæn.dɪŋ/" data-meaning="刻意強求、主動索取" data-eg="without demanding it">demanding it</span>. I’d been carefully not staring at him for three months. Maya knew. She’d known since the first week of semester, when I made the mistake of looking at him a second too long while he was talking about some documentary he’d watched. She’d raised one eyebrow at me across the table and I’d looked away so fast I almost <span class="vocab" data-word="pulled a muscle" data-pos="phrase" data-phonetic="/pʊld ə ˈmʌs.əl/" data-meaning="扭傷肌肉 (幽默誇張形容轉頭轉得太快)" data-eg="almost pulled a muscle in my neck">pulled a muscle</span> in my neck.</p>
-        <div class="para-trans">里奧是那種只要走進房間，就會讓平凡空間瞬間明亮起來的人。並非因為他刻意表現，而是他身上自帶一種不著痕跡卻能吸引全場目光的氣場。我小心翼翼地克制自己不要盯著他看，已經整整三個月了。瑪雅是知道的。她從開學第一週就察覺到了，當時只因里奧聊起一部紀錄片，我不自覺地多看了他一秒。瑪雅隔著桌子向我挑了挑眉，我嚇得猛然轉過頭去，速度快得差點扭傷脖子。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Maya also had a boyfriend. His name was Jordan and he was out of town that weekend for a family thing. I remember thinking, when she mentioned it casually over lunch, that it shouldn’t matter. Friends were allowed to talk to other people. Friends were allowed to laugh at other people’s jokes. The fact that my chest tightened a little when she said Jordan wouldn’t be around was my problem, not hers.</p>
-        <div class="para-trans">然而瑪雅是有男朋友的。她的男友名叫喬丹，那個週末剛好回老家處理家事。我記得午餐時她隨口提及，當時我還告訴自己：這沒什麼大不了的，朋友之間與異性聊天很正常，對別人的笑話發笑也理所應當。聽到喬丹不在時我胸口泛起的那一絲緊繃，是我自己的問題，與她無關。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Somehow she ended up sitting next to Leo the entire time.</p>
-        <div class="para-trans">然而不知何故，整整一個晚上，她偏偏就坐在里奧的身旁。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">At first I told myself it was fine. The table was crowded. Seats were limited. People shifted around as more of the group arrived. But then she started laughing at every joke he made, even the ones that weren’t particularly funny. She touched his arm when she leaned in to say something. She asked him what his type was, tilting her head like it was the most casual question in the world, and waited for his answer with an expression I recognized from years of knowing her.</p>
-        <div class="para-trans">起初我安慰自己說這沒什麼。長桌很擠，座位有限，隨著聚會人數增加，大家挪動位置再正常不過。但接下來，里奧講的每一個笑話她都笑得花枝亂顫，哪怕有些笑話根本毫無笑點。當她湊近說話時，總會若有若無地觸碰他的手臂。她側著頭詢問里奧喜歡什麼類型的女孩，語氣無比隨意，隨後用一種相識多年的我極為熟悉的眼神，靜靜等待著對方的回答。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I tried to stay normal. I really did. I talked to the person on my other side about the exam that had nearly destroyed us. I ordered another drink I didn’t need. I smiled when someone made a joke about the professor’s handwriting. But every few minutes my eyes would drift back to the other end of the table, where Maya was still angled toward Leo like the rest of us had <span class="vocab" data-word="faded into background noise" data-pos="idiom" data-phonetic="/feɪd ˈɪn.tuː ˈbæk.ɡraʊnd nɔɪz/" data-meaning="淪為背景雜音、完全被當透明" data-eg="like the rest of us had faded into background noise">faded into background noise</span>.</p>
-        <div class="para-trans">我極力表現得一切如常，真的竭盡全力了。我拉著身旁的同學，熱切地討論著那份差點把我們逼瘋的期中試卷。我點了一杯自己根本不需要的飲品。有人拿教授難辨的板書開玩笑時，我也跟著附和微笑。但每隔幾分鐘，我的目光總是不由自主地飄向長桌的另一端——瑪雅整個身體依然朝里奧傾斜著，彷彿我們其餘所有人，都早已化作了無足輕重的背景雜音。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">By the time we decided to leave, the sky outside had gone fully dark. The café lights looked warmer against the windows. Someone offered to drive because the buses had already stopped running as frequently. We all piled into one car because it was easier than splitting up. I ended up in the front passenger seat. Maya climbed into the back without hesitation and slid in next to Leo, close enough that their shoulders almost touched.</p>
-        <div class="para-trans">等到大家決定離開時，窗外的夜空已徹底陷入黑暗。咖啡館的暖黃燈光倒映在玻璃上，顯得格外溫柔。有人主動提出開車送大家回宿舍，因為深夜的公車班次已經大幅減少。為了省事，我們所有人擠進了同一輛車。我坐在了副駕駛座。而瑪雅毫無猶豫地鑽進了後座，緊緊挨著里奧坐下，距離近得兩人的肩膀幾乎相互挨擦。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">That was the moment something in me <span class="vocab" data-word="snapped" data-pos="verb" data-phonetic="/snæpt/" data-meaning="理智斷線、忍無可忍爆發" data-eg="something in me snapped">snapped</span>.</p>
-        <div class="para-trans">就在那一瞬間，我心中壓抑已久的理智徹底崩斷了。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I don’t remember deciding to speak. The words just arrived, fully formed, like they’d been waiting behind my teeth all evening. “Okay Maya,” I said, loud enough for the whole car to hear. “I see you. Girl with the boyfriend, I see you.”</p>
-        <div class="para-trans">我甚至不記得自己何時決定開口。那些字句彷彿整晚都潛伏在我的齒縫之間，未經思索便脫口而出：「行啊瑪雅，」我提高了音量，大聲到全車每個人都能清晰聽見：「我都看在眼裡呢。那位有男朋友的女孩，我可都看在眼裡。」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I said it twice. The second time sounded even worse than the first—sharper, more <span class="vocab" data-word="deliberate" data-pos="adjective" data-phonetic="/dɪˈlɪb.ɚ.ət/" data-meaning="故意的、刻意的" data-eg="more deliberate, impossible to pretend had been a joke">deliberate</span>, impossible to pretend had been a joke.</p>
-        <div class="para-trans">我一字一句地重覆了兩遍。第二次的語氣比第一次更顯刻薄、更加蓄意，徹底撕破了任何偽裝成開玩笑的可能。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The car went quiet in a way that felt physical. The music from the radio suddenly seemed too loud and then not loud enough. Leo looked out the window, his profile still against the passing streetlights. Maya’s face, in the <span class="vocab" data-word="rearview mirror" data-pos="noun" data-phonetic="/ˈrɪr.vjuː ˈmɪr.ɚ/" data-meaning="後照鏡、車內倒後鏡" data-eg="in the rearview mirror">rearview mirror</span>, went red and then carefully blank, the expression she used when she was deciding whether something was worth fighting about. The driver cleared his throat and turned the volume up a little, like noise could fix whatever had just broken between the seats.</p>
-        <div class="para-trans">車廂內頓時陷入了一種具備實體壓迫感的死寂。收音機飄出的音樂突然顯得刺耳無比，隨後又顯得不足以打破沉悶。里奧轉過頭望向窗外，側臉在路燈流光下紋絲不動。而在後照鏡中，瑪雅的臉色先是一陣通紅，旋即轉為極力克制的漠然——那是她在盤算眼下究竟值不值得大鬧一場時的慣常神態。駕駛清了清喉嚨，悄悄調高了一點音量，似乎想用噪音縫補前後座之間瞬間破碎的裂痕。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">No one said anything for the rest of the ride. The silence sat between us like a fourth passenger. I stared at my hands in my lap and counted the seconds until we reached the dorms. Every red light felt longer than the last.</p>
-        <div class="para-trans">在剩下的路程中，沒有人再說一句話。冰冷的沉默宛如第四位乘客，沉甸甸地擠在我們當中。我低頭盯著放在膝蓋上的雙手，在一秒秒的煎熬中計算著回到宿舍的時間。眼前的每一個紅燈，都顯得比上一個更為漫長。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">When we got back, Maya pulled me aside before I could reach the stairs. The hallway light was too bright, the kind of <span class="vocab" data-word="fluorescent" data-pos="adjective" data-phonetic="/flɔːˈres.ənt/" data-meaning="日光燈的、慘白的" data-eg="the kind of fluorescent that made everything look slightly wrong">fluorescent</span> that made everything look slightly wrong. Someone’s door was open further down the corridor, spilling laughter and music that felt like it belonged to a completely different night, one where nothing awkward had happened.</p>
-        <div class="para-trans">抵達宿舍後，在我踏上樓梯之前，瑪雅一把將我拽到了一旁。走廊上的日光燈亮得刺眼，那種冰冷的慘白光線讓一切看起來都帶著扭曲的違和感。走廊盡頭有扇房門虛掩著，溢出歡聲笑語與音樂，聽起來恍若屬於另一個截然不同的夜晚——一個什麼尷尬醜態都不曾發生過的平行時空。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“You embarrassed me in front of him,” she said. Her voice was low and tight, the way it got when she was genuinely angry and trying not to let it show too much.</p>
-        <div class="para-trans">「你剛才當著他的面讓我下不了台，」她說道。她的聲音低沉而緊繃，正是她真正怒不可遏卻極力按捺時的獨特聲線。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“You spent the entire night <span class="vocab" data-word="acting single" data-pos="phrase" data-phonetic="/ˈæktɪŋ ˈsɪŋ.ɡəl/" data-meaning="扮單身、表現得好似冇伴侶咁" data-eg="spent the entire night acting single">acting single</span>,” I answered. I hated how my voice sounded—<span class="vocab" data-word="defensive" data-pos="adjective" data-phonetic="/dɪˈfen.sɪv/" data-meaning="戒備防衛的、語氣帶刺的" data-eg="defensive, shaky">defensive</span>, shaky, younger than I wanted it to be. Like I was still the version of myself who needed her to like me more than I needed to be right.</p>
-        <div class="para-trans">「你整晚都在那裡假裝自己是單身！」我反駁道。我厭惡自己當時的聲音——防備、顫抖，聽起來遠比我想像的要幼稚脆弱。彷彿我依舊是那個比起捍衛底線、更在乎能否討她歡心的卑微朋友。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">She stared at me for a second, eyes searching my face like she was looking for the friend she thought she’d arrived with. Then she shook her head once, a small sharp movement, and turned away. I stood there until the stairwell door clicked shut behind her. The sound echoed longer than it should have.</p>
-        <div class="para-trans">她凝視了我片刻，目光在我臉上不斷游移，彷彿試圖辨認出出門時原本與她同行的那個朋友。隨後她用力搖了搖頭，轉身離去。我站在原地，直到樓梯間的沉重防火門咔嗒一聲合上，那聲悶響在空蕩的走廊裡迴盪了許久。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">That night I lay awake <span class="vocab" data-word="replaying" data-pos="verb" data-phonetic="/ˌriːˈpleɪ.ɪŋ/" data-meaning="倒帶重播、在腦海中反覆回想" data-eg="replaying every second">replaying every second</span>. The way Leo had looked when I said those words—not angry, not amused, just quietly uncomfortable, like he’d been forced to witness something he didn’t ask for. The way Maya’s shoulders had drawn in. The silence that followed us all the way home and then settled into the space between our rooms. I wasn’t even sure who I was more upset with—her for crossing a line she knew existed, or myself for making the whole thing public in the worst possible way.</p>
-        <div class="para-trans">那一晚我徹夜難眠，在腦海中一秒一秒地倒帶重溫著每個細節。里奧在我說出那句話時的眼神——沒有憤怒，也沒有覺得有趣，純粹是一種被迫捲入鬧劇的尷尬與難堪。瑪雅緊繃收縮的肩膀。一路尾隨我們回到宿舍、最終凝固在兩扇房門之間的冰冷死寂。我甚至不知道自己究竟更生誰的氣——是氣她明知我的心意卻依然肆無忌憚地跨界，還是氣我自己用了一種最醜陋、最不堪的方式將友情當眾撕碎。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I kept thinking about the version of the night that could have happened instead. The one where I stayed quiet. The one where I laughed along with everyone else and let the small jealous feeling sit in my chest without giving it a voice. The one where I went home with my <span class="vocab" data-word="dignity intact" data-pos="phrase" data-phonetic="/ˈdɪɡ.nə.t̬i ɪnˈtækt/" data-meaning="體面完好、保留尊嚴" data-eg="went home with my dignity intact">dignity intact</span> and texted her something normal the next morning. It felt so close I could almost touch it. One different choice and the entire evening would have ended differently.</p>
-        <div class="para-trans">我不停地構想著那個夜晚本可能發生的另一個版本。在那個版本裡，我始終保持安靜；我跟著眾人一同微笑，任由那股微弱的酸澀嫉妒沉澱在胸口而未獲發洩；在那個版本裡，我帶著完好無損的體面回到房間，隔天早晨還能若無其事地給她發一條日常訊息。那個選擇近在咫尺，只要當時換了一念之差，整個夜晚的軌跡便會截然不同。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The next day Leo said hi to me in the hallway like nothing had happened. His smile was the same as always—easy, a little distracted, completely unaware of the small disaster I’d created in his presence the night before. I said hi back and kept walking. Maya didn’t text. She didn’t appear at our usual table in the dining hall. By the third day the absence had settled into something heavy and familiar, the kind of quiet that starts to feel permanent even when you tell yourself it isn’t.</p>
-        <div class="para-trans">第二天，里奧在走廊上迎面遇見我，神情自若地打了個招呼。他的笑容依舊如常——輕鬆、帶著少許心不在焉，絲毫未察覺前一晚因他在場而引爆了一場怎樣的人際災難。我淡淡回應了一句便快步走開。瑪雅沒有發來任何訊息，也未曾出現在學生餐廳我們慣坐的餐桌旁。到了第三天，這種缺席已化作一種沉甸甸且熟悉的壓抑感，那是一種哪怕你極力自我安慰、卻深知很可能演變為永久決裂的死寂。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I told myself it would <span class="vocab" data-word="blow over" data-pos="phrasal verb" data-phonetic="/bloʊ ˈoʊ.vɚ/" data-meaning="（風波、爭吵）平息過去、隨時間淡化" data-eg="told myself it would blow over">blow over</span>. Friendships survived worse. People said stupid things when they were tired and jealous and twenty years old. We would talk eventually. We always did. That was the story I repeated to myself while I brushed my teeth and while I walked to class and while I lay in bed staring at the ceiling at two in the morning. But every time my phone lit up with a notification that wasn’t from her, something small and sharp twisted under my ribs.</p>
-        <div class="para-trans">我一再告訴自己這一切終會過去。朋友之間經歷過更大的摩擦也總能和好如初。二十歲出頭的年輕人在疲憊與嫉妒的催化下難免會說些蠢話。我們遲早會重歸於好，以前每次都是如此。無論是在刷牙時、走去上課的路上，還是在凌晨兩點凝視著天花板的失眠中，我一遍又一遍地對自己重複著這套說辭。但每當手機螢幕亮起、跳出的通知卻不是來自她時，我的心口下方依然會泛起一陣鋒利而尖銳的隱痛。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Leo still sits at the same table sometimes when our schedules overlap. Maya still exists in the same group chats, her name appearing under messages about assignments and weekend plans that no longer include me the way they used to. I still know exactly how many days it’s been since she last looked at me like I was someone she trusted without question. And every time I walk past the café where it started, I remember the exact second the words left my mouth—too loud, too sharp, impossible to take back. I remember the way the car went quiet. I remember the weight of the silence that followed us home.</p>
-        <div class="para-trans">課表重疊的日子裡，里奧偶爾仍會坐在同一張桌旁。瑪雅依然留在同一個群組裡，她的名字依舊會出現在討論作業與週末計畫的聊天串中，只是那些聚會計畫再也沒有像從前那樣將我算在其中。我清楚記得究竟過去了多少天，她再也沒有用那種毫无芥蒂、全心信任的目光看過我。每當我走過那家當初聚會的咖啡館，依然能清晰憶起那些話衝出口的那一秒——太過響亮、過於尖刻、覆水難收。我記得車廂陷入冰點的那一刻，更記得那股一路跟隨我們回家的沉重寂靜。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Sometimes I still catch myself <span class="vocab" data-word="rehearsing" data-pos="verb" data-phonetic="/rəˈhɝː.sɪŋ/" data-meaning="在腦海中反覆排練預演" data-eg="rehearsing the apology I never gave">rehearsing</span> the apology I never gave and the explanation I never asked for. Other times I practice letting the whole thing stay unfinished. Neither feels like <span class="vocab" data-word="closure" data-pos="noun" data-phonetic="/ˈkloʊ.ʒɚ/" data-meaning="釋懷、情感上的圓滿了結" data-eg="Neither feels like closure.">closure</span>. Both feel like the only options left.</p>
-        <div class="para-trans">有時我依然會發覺自己在心中反覆演練著那份從未說出口的道歉，以及那段我從未追問過的解釋。有時我又試圖學著接受這段關係就此懸而未決。這兩種選擇都無法帶來真正的釋懷，但它們偏偏成了橫亙在眼前的僅剩選項。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I don’t know if we’re going to fix it. I don’t know if we’re supposed to. All I know is that one night, in a car full of people I thought I knew, I said something I can’t unsay—and the quiet that came after has been louder than anything else since.</p>
-        <div class="para-trans">我不知道我們是否還能修補這段友情，甚至不知道究竟是否該去修補。我唯一知道的是，在那個坐滿了我自以為熟識之人的車廂裡，我說出了一句永遠無法收回的話——而自那一刻起蔓延至今的寂靜，遠比這世上的一切聲響都要震耳欲聾。</div>
-      </div>
-    </article>
-
-    <!-- Quick Quiz Section -->
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2>💡 Quick Quiz (小測試)</h2>
-        <p>測下自己學到幾多地道英文詞彙同理解情節！</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. What does "something in me snapped" describe in the car?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The narrator broke her car seat belt</button>
-          <button class="quiz-opt" data-correct="true">B) She suddenly lost emotional control after holding back her jealousy all night</button>
-          <button class="quiz-opt" data-correct="false">C) She snapped a candid picture on her phone</button>
-          <button class="quiz-opt" data-correct="false">D) Her necklace broke into pieces</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Something snapped」形容「某人突然理智斷線、無法再隱忍情緒」。主角積聚咗成晚嘅嫉妒與怨氣，喺車內瞬間爆發。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. Why was Maya furious with the narrator after returning to the dorm?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The narrator refused to split the cab fare</button>
-          <button class="quiz-opt" data-correct="true">B) The narrator called her out publicly in front of Leo and everyone in the car</button>
-          <button class="quiz-opt" data-correct="false">C) The narrator spilled iced coffee on Maya's jacket</button>
-          <button class="quiz-opt" data-correct="false">D) Maya failed her midterm exam</button>
-        </div>
-        <div class="quiz-feedback" data-explain="Maya 憤怒嘅原因係主角喺車入面眾人面前指責佢「Girl with the boyfriend, I see you... acting single」，令佢當眾無地自容。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. What does "closure" mean when the narrator reflects on the broken friendship?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Locking the dorm room door</button>
-          <button class="quiz-opt" data-correct="false">B) Ending the semester classes</button>
-          <button class="quiz-opt" data-correct="true">C) An emotional resolution or peace that allows you to move on</button>
-          <button class="quiz-opt" data-correct="false">D) A business deal agreement</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Closure」指「心靈上嘅了結、釋懷」。故事中無論係私下道歉定係就此放任不管，都無法帶嚟真正嘅釋懷。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>100% Free English Story · Built with Voice, Dictionary Mode & Quiz</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

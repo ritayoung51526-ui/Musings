@@ -1,157 +1,147 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The First Starbucks Panic – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The First Starbucks Panic – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The First Starbucks Panic</h1>
+<div class="meta">
+<span class="badge short">Short · ~4 min</span>
+<span data-en="Café Cringe · Ordering Fail" data-zh="咖啡廳日常 · 第一次點餐大混亂">Café Cringe · Ordering Fail</span>
+</div>
+</header>
+<div class="hero">Café Counter · The Sizing Standoff</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<!-- Voice TTS Player Bar -->
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">Before that fateful Tuesday, my entire coffee education consisted of stirring instant coffee crystals into a cracked mug with hot tap water. I was simple, happy, and entirely unprepared for the complex corporate ecosystem of Starbucks.</p>
+<div class="para-trans">在那個倒楣的週二之前，我對咖啡的全部認知，不過就是把三合一速溶咖啡粉倒進有裂紋的馬克杯裡，用熱水攪勻而已。那時的我生活簡單、知足常樂，對星巴克那套複雜精密的商業體系完全一無所知。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I only walked in because my friends kept treating their green cups like luxury fashion accessories. I figured I’d walk up, say “one medium coffee please,” pay my money, and walk out like an adult. I was wrong.</p>
+<div class="para-trans">我之所以走進去，純粹是因為身邊的朋友總是把那個綠色杯子當成某種高級時尚配件拿在手上。我原以為自己只要走上前去，說一句「請給我一杯中杯咖啡」，付錢，然後像個成熟體面的人一樣走出來就行了。事實證明我錯得離譜。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The line was eight people deep, trailing behind me out the door. When it was finally my turn, the barista stared at me across the glossy counter with the deadpan patience of someone who had already explained oat milk eighteen times that morning. “Hi, what can I get started for you?”</p>
+<div class="para-trans">排隊的人龍足足有八個人長，一直延伸到門外。終於輪到我時，吧台後的咖啡師隔著光亮的櫃檯看著我，臉上掛著一種今早已經向無數人解釋過十八次燕麥奶的漠然神情：「嗨，今天想要點些什麼？」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I stared at the giant blackboard menu. It looked like an eye exam written in Italian. Words like <span class="vocab" data-eg="Caramel Macchiato" data-meaning="瑪奇朵咖啡" data-phonetic="/ˌmɑː.kiˈɑː.toʊ/" data-pos="noun" data-word="Macchiato">Macchiato</span>, Frappuccino, and Ristretto swam across my vision. “Uh... just a medium coffee?” I asked, my voice slightly trembling.</p>
+<div class="para-trans">我呆呆盯著頭頂上巨大的黑板菜單。那看起來簡直就像一份用義大利文寫成的視力檢查表。諸如瑪奇朵、星冰樂、芮斯崔朵等名詞在我眼前飄來飄去。「呃……一杯中杯咖啡就好？」我問道，聲音帶著一絲顫抖。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“What size?” she asked. “Tall, Grande, or Venti?”</p>
+<div class="para-trans">「什麼尺寸？」她問：「Tall、Grande 還是 Venti？」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">My brain instantly short-circuited. <em>Tall</em> means tall, which sounds big. <em>Grande</em> literally means grand, which also means big. <em>Venti</em> sounds like a Venetian canal. Why on earth could we not just use small, medium, and large like reasonable citizens of planet Earth?</p>
+<div class="para-trans">我的大腦瞬間短路了。Tall 在英文裡明明是「高」，聽起來很大；Grande 在西文裡是大；Venti 聽起來像威尼斯運河。天知道為什麼大家不能像地球上的普通人一樣，老老實實說小杯、中杯和大杯就好？</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“Tall,” I blurted out, thinking it meant large. “And can you make it a... Caramel... Mock-y-auto?” I butchered the word so violently that the guy wearing wireless earbuds behind me let out an audible sigh of exasperation.</p>
+<div class="para-trans">「那就 Tall 吧，」我脫口而出，心想高肯定代表大杯：「然後能不能做成……焦糖……莫奇阿托？」我唸錯那個詞的發音殘暴得讓身後戴著無線耳機的西裝男忍不住發出了一聲長長的嘆息。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“Hot or iced?” she pressed on, fingers hovering over the register. “Skim, whole, soy, oat, or almond milk? Single or double shot? Whip or no whip?”</p>
+<div class="para-trans">「熱的還是冰的？」她繼續追問，手指懸在收銀機上方：「低脂奶、全脂奶、豆奶、燕麥奶還是杏仁奶？單份濃縮還是雙份？要加鮮奶油嗎？」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">It felt like I was being <span class="vocab" data-eg="being interrogated by customs agents" data-meaning="接受嚴格審問、盤查" data-phonetic="/ɪnˈter.ə.ɡeɪ.tɪd/" data-pos="verb" data-word="interrogated">interrogated</span> at international border control. Sweat began prickling at my hairline. “Yes,” I said blindly. “Whatever comes out naturally.”</p>
+<div class="para-trans">那感覺就像是在海關邊檢處接受反覆盤問一樣。細汗開始在我髮際線上滲出。「是的，」我盲目地回答：「你們平時怎麼做就怎麼來吧。」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">She gave me a pitying look, punched a few buttons, and charged me seven dollars and fifty cents for a tiny cup of lukewarm sweet foam that tasted like melted candy. I grabbed my cup, mumbled thank you to nobody, and practically jogged to the exit.</p>
+<div class="para-trans">她給了我一個充滿憐憫的眼神，迅速敲了幾下按鈕，收了我七塊五美元，遞給我一小杯溫溫的、喝起來像融化糖果一樣的甜泡沫。我抓起杯子，對著空氣含糊說了聲謝謝，幾乎是一路小跑著衝向了大門。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I haven’t ordered at a fancy coffee shop since. Instant coffee in a chipped mug has never tasted so peaceful.</p>
+<div class="para-trans">自那以後，我再也沒有踏進過任何花俏的高檔咖啡店。用缺角的馬克杯泡三合一速溶咖啡，從來沒有讓人感到如此踏實平靜過。</div>
+</div>
+</article>
+<!-- Quick Quiz Section -->
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. Why was the narrator so confused when ordering?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The café didn't accept cash</button>
+<button class="quiz-opt" data-correct="true">B) The non-standard sizing names (Tall, Grande, Venti) and endless customization choices overwhelmed him</button>
+<button class="quiz-opt" data-correct="false">C) The barista spoke a completely foreign language</button>
+<button class="quiz-opt" data-correct="false">D) The shop ran out of coffee beans</button>
+</div>
+<div class="quiz-feedback" data-explain="特殊的尺寸名稱（Tall、Grande、Venti）加上繁複的牛奶、冷熱與奶蓋選項，讓平時只喝即溶咖啡的主角手足無措。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. What does the word "interrogated" imply in the story?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Being invited to a casual chat</button>
+<button class="quiz-opt" data-correct="true">B) Being bombarded with intense, rapid questions under pressure</button>
+<button class="quiz-opt" data-correct="false">C) Singing along to background music</button>
+<button class="quiz-opt" data-correct="false">D) Ordering food online quietly</button>
+</div>
+<div class="quiz-feedback" data-explain="「Interrogated」指像審訊一樣被連環追問。這裡幽默比喻店員連續追問牛奶、濃縮等細節帶來的壓迫感。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. What was the narrator's final conclusion about coffee?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) He became a professional Starbucks barista</button>
+<button class="quiz-opt" data-correct="false">B) He only drinks iced Venti coffees now</button>
+<button class="quiz-opt" data-correct="true">C) Simple instant coffee at home is much more peaceful and stress-free</button>
+<button class="quiz-opt" data-correct="false">D) He stopped drinking liquids entirely</button>
+</div>
+<div class="quiz-feedback" data-explain="主角最終得出的結論是：在家用缺角馬克杯喝速溶咖啡，遠比在店裡經歷社死點餐要平和踏實得多。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The First Starbucks Panic</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~4 min</span>
-        <span data-en="Café Cringe · Ordering Fail" data-zh="咖啡廳日常 · 第一次點餐大混亂">Café Cringe · Ordering Fail</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Café Counter · The Sizing Standoff</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <!-- Voice TTS Player Bar -->
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">Before that fateful Tuesday, my entire coffee education consisted of stirring instant coffee crystals into a cracked mug with hot tap water. I was simple, happy, and entirely unprepared for the complex corporate ecosystem of Starbucks.</p>
-        <div class="para-trans">在那個倒楣的週二之前，我對咖啡的全部認知，不過就是把三合一速溶咖啡粉倒進有裂紋的馬克杯裡，用熱水攪勻而已。那時的我生活簡單、知足常樂，對星巴克那套複雜精密的商業體系完全一無所知。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I only walked in because my friends kept treating their green cups like luxury fashion accessories. I figured I’d walk up, say “one medium coffee please,” pay my money, and walk out like an adult. I was wrong.</p>
-        <div class="para-trans">我之所以走進去，純粹是因為身邊的朋友總是把那個綠色杯子當成某種高級時尚配件拿在手上。我原以為自己只要走上前去，說一句「請給我一杯中杯咖啡」，付錢，然後像個成熟體面的人一樣走出來就行了。事實證明我錯得離譜。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The line was eight people deep, trailing behind me out the door. When it was finally my turn, the barista stared at me across the glossy counter with the deadpan patience of someone who had already explained oat milk eighteen times that morning. “Hi, what can I get started for you?”</p>
-        <div class="para-trans">排隊的人龍足足有八個人長，一直延伸到門外。終於輪到我時，吧台後的咖啡師隔著光亮的櫃檯看著我，臉上掛著一種今早已經向無數人解釋過十八次燕麥奶的漠然神情：「嗨，今天想要點些什麼？」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I stared at the giant blackboard menu. It looked like an eye exam written in Italian. Words like <span class="vocab" data-word="Macchiato" data-pos="noun" data-phonetic="/ˌmɑː.kiˈɑː.toʊ/" data-meaning="瑪奇朵咖啡" data-eg="Caramel Macchiato">Macchiato</span>, Frappuccino, and Ristretto swam across my vision. “Uh... just a medium coffee?” I asked, my voice slightly trembling.</p>
-        <div class="para-trans">我呆呆盯著頭頂上巨大的黑板菜單。那看起來簡直就像一份用義大利文寫成的視力檢查表。諸如瑪奇朵、星冰樂、芮斯崔朵等名詞在我眼前飄來飄去。「呃……一杯中杯咖啡就好？」我問道，聲音帶著一絲顫抖。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“What size?” she asked. “Tall, Grande, or Venti?”</p>
-        <div class="para-trans">「什麼尺寸？」她問：「Tall、Grande 還是 Venti？」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">My brain instantly short-circuited. <em>Tall</em> means tall, which sounds big. <em>Grande</em> literally means grand, which also means big. <em>Venti</em> sounds like a Venetian canal. Why on earth could we not just use small, medium, and large like reasonable citizens of planet Earth?</p>
-        <div class="para-trans">我的大腦瞬間短路了。Tall 在英文裡明明是「高」，聽起來很大；Grande 在西文裡是大；Venti 聽起來像威尼斯運河。天知道為什麼大家不能像地球上的普通人一樣，老老實實說小杯、中杯和大杯就好？</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“Tall,” I blurted out, thinking it meant large. “And can you make it a... Caramel... Mock-y-auto?” I butchered the word so violently that the guy wearing wireless earbuds behind me let out an audible sigh of exasperation.</p>
-        <div class="para-trans">「那就 Tall 吧，」我脫口而出，心想高肯定代表大杯：「然後能不能做成……焦糖……莫奇阿托？」我唸錯那個詞的發音殘暴得讓身後戴著無線耳機的西裝男忍不住發出了一聲長長的嘆息。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“Hot or iced?” she pressed on, fingers hovering over the register. “Skim, whole, soy, oat, or almond milk? Single or double shot? Whip or no whip?”</p>
-        <div class="para-trans">「熱的還是冰的？」她繼續追問，手指懸在收銀機上方：「低脂奶、全脂奶、豆奶、燕麥奶還是杏仁奶？單份濃縮還是雙份？要加鮮奶油嗎？」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">It felt like I was being <span class="vocab" data-word="interrogated" data-pos="verb" data-phonetic="/ɪnˈter.ə.ɡeɪ.tɪd/" data-meaning="接受嚴格審問、盤查" data-eg="being interrogated by customs agents">interrogated</span> at international border control. Sweat began prickling at my hairline. “Yes,” I said blindly. “Whatever comes out naturally.”</p>
-        <div class="para-trans">那感覺就像是在海關邊檢處接受反覆盤問一樣。細汗開始在我髮際線上滲出。「是的，」我盲目地回答：「你們平時怎麼做就怎麼來吧。」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">She gave me a pitying look, punched a few buttons, and charged me seven dollars and fifty cents for a tiny cup of lukewarm sweet foam that tasted like melted candy. I grabbed my cup, mumbled thank you to nobody, and practically jogged to the exit.</p>
-        <div class="para-trans">她給了我一個充滿憐憫的眼神，迅速敲了幾下按鈕，收了我七塊五美元，遞給我一小杯溫溫的、喝起來像融化糖果一樣的甜泡沫。我抓起杯子，對著空氣含糊說了聲謝謝，幾乎是一路小跑著衝向了大門。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I haven’t ordered at a fancy coffee shop since. Instant coffee in a chipped mug has never tasted so peaceful.</p>
-        <div class="para-trans">自那以後，我再也沒有踏進過任何花俏的高檔咖啡店。用缺角的馬克杯泡三合一速溶咖啡，從來沒有讓人感到如此踏實平靜過。</div>
-      </div>
-    </article>
-
-    <!-- Quick Quiz Section -->
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. Why was the narrator so confused when ordering?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The café didn't accept cash</button>
-          <button class="quiz-opt" data-correct="true">B) The non-standard sizing names (Tall, Grande, Venti) and endless customization choices overwhelmed him</button>
-          <button class="quiz-opt" data-correct="false">C) The barista spoke a completely foreign language</button>
-          <button class="quiz-opt" data-correct="false">D) The shop ran out of coffee beans</button>
-        </div>
-        <div class="quiz-feedback" data-explain="特殊的尺寸名稱（Tall、Grande、Venti）加上繁複的牛奶、冷熱與奶蓋選項，讓平時只喝即溶咖啡的主角手足無措。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. What does the word "interrogated" imply in the story?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Being invited to a casual chat</button>
-          <button class="quiz-opt" data-correct="true">B) Being bombarded with intense, rapid questions under pressure</button>
-          <button class="quiz-opt" data-correct="false">C) Singing along to background music</button>
-          <button class="quiz-opt" data-correct="false">D) Ordering food online quietly</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Interrogated」指像審訊一樣被連環追問。這裡幽默比喻店員連續追問牛奶、濃縮等細節帶來的壓迫感。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. What was the narrator's final conclusion about coffee?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) He became a professional Starbucks barista</button>
-          <button class="quiz-opt" data-correct="false">B) He only drinks iced Venti coffees now</button>
-          <button class="quiz-opt" data-correct="true">C) Simple instant coffee at home is much more peaceful and stress-free</button>
-          <button class="quiz-opt" data-correct="false">D) He stopped drinking liquids entirely</button>
-        </div>
-        <div class="quiz-feedback" data-explain="主角最終得出的結論是：在家用缺角馬克杯喝速溶咖啡，遠比在店裡經歷社死點餐要平和踏實得多。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

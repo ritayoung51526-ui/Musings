@@ -1,140 +1,133 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Flower Crown Meeting – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Flower Crown Meeting – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The Flower Crown Meeting</h1>
+<div class="meta">
+<span class="badge short">Short · ~4 min</span>
+<span data-en="Video Call Life · The Filter Nobody Turned Off" data-zh="視訊日常 · 沒人記得關掉的濾鏡">Video Call Life · The Filter Nobody Turned Off</span>
+</div>
+</header>
+<div class="hero">Video Meeting · The Filter That Stayed On</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">The night before, I had been on a video call with my younger cousin, testing out a silly app that added animated flower crowns, sparkling cheeks, and enormous cartoon eyes to your face. It was ridiculous, and we laughed for almost an hour.</p>
+<div class="para-trans">前一天晚上，我和表妹在視訊聊天，一起試玩一款會在臉上加上動畫花冠、閃亮腮紅和誇張卡通大眼睛的搞笑濾鏡App。整個過程蠢到不行，我們笑了將近一個小時。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The next morning, running late for an important video interview for a job I genuinely wanted, I grabbed my laptop, opened my usual video call software, and joined the meeting in a frantic rush, barely glancing at my own camera preview.</p>
+<div class="para-trans">隔天早上，我為了一場真心很想爭取的工作視訊面試而手忙腳亂，抓起筆電，打開平常用的視訊軟體，匆匆忙忙加入了會議，甚至幾乎沒瞄一眼自己的鏡頭預覽畫面。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">What I did not realize was that the video call software had somehow kept the last-used camera filter active from an entirely different app the night before, and it had, without my knowledge, carried over into this very serious, very professional meeting.</p>
+<div class="para-trans">而我完全不知道的是，我的視訊軟體不知怎地，把前一晚另一款App所使用的鏡頭濾鏡設定，一併沿用了下來，在我毫不知情的情況下，就這樣帶進了這場極其正式、極其專業的面試會議裡。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The interviewer, a senior manager named Mr. Okafor, appeared on my screen looking perfectly professional in a crisp gray suit. I greeted him warmly and began answering his first question about my previous work experience, feeling calm and prepared.</p>
+<div class="para-trans">面試官奧卡福先生的畫面出現在我的螢幕上，穿著一身筆挺的灰色西裝，看起來十分專業。我熱情地向他打招呼，並開始回答他關於我過往工作經驗的第一個問題，感覺自己既冷靜又有準備。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">He was polite throughout, nodding along, but I noticed a very faint, <span class="vocab" data-eg="a restrained smile" data-meaning="克制的、忍住的" data-phonetic="/rɪˈstreɪnd/" data-pos="adjective" data-word="restrained">restrained</span> smile tugging at the corner of his mouth that I couldn't quite make sense of, especially during what I thought were fairly serious answers about project management.</p>
+<div class="para-trans">整場面試他都表現得十分有禮貌，頻頻點頭，但我注意到他嘴角似乎一直帶著一絲極其克制、忍住不笑的微笑，讓我摸不著頭緒，尤其是在我回答一些關於專案管理、我自認相當嚴肅的問題時。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">About fifteen minutes in, he finally asked, with visible effort to remain professional, "I don't mean to interrupt, but are you aware there's a flower crown and some sparkles on your face right now?" I froze completely.</p>
+<div class="para-trans">大約十五分鐘後，他終於忍不住開口，語氣中透著明顯克制的專業感：「我不是想打斷你，只是……你知道自己臉上現在頂著一個花冠，還有一些閃亮亮的東西嗎？」我整個人瞬間僵住。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I glanced down at my own video preview for the first time that entire call and there I was: enormous sparkling cartoon eyes, a crown of animated daisies slowly rotating above my head, and pink sparkles drifting gently across my cheeks every time I blinked.</p>
+<div class="para-trans">我這才在整場面試中第一次低頭看向自己的鏡頭預覽畫面——結果看到的自己：一雙誇張閃亮的卡通大眼睛，頭頂上一圈緩緩旋轉的動畫雛菊花冠，還有每次眨眼都會輕輕飄過臉頰的粉紅色亮片。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I laughed so suddenly and so loudly that I startled myself, quickly explained about my cousin's silly app the night before, and fumbled through the settings to turn it off. Mr. Okafor laughed too, genuinely this time, and said it was, without question, the most memorable interview he'd conducted all year.</p>
+<div class="para-trans">我突然爆出一陣連自己都被嚇到的大笑，趕緊解釋前一晚跟表妹玩那款搞笑App的來龍去脈，同時手忙腳亂地在設定裡把濾鏡關掉。奧卡福先生這次也真心笑了出來，並表示這無疑是他今年主持過、最令人難忘的一場面試。</div>
+</div>
+</article>
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. Where did the flower crown filter actually come from?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The interviewer added it as a prank</button>
+<button class="quiz-opt" data-correct="true">B) It carried over from a silly app used the night before with a cousin</button>
+<button class="quiz-opt" data-correct="false">C) It was a default setting of the interview software</button>
+<button class="quiz-opt" data-correct="false">D) A software virus added it</button>
+</div>
+<div class="quiz-feedback" data-explain="前一晚跟表妹玩搞笑濾鏡App所設定的花冠濾鏡，不知怎地被沿用到了隔天的視訊面試軟體裡。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. What does "restrained" describe about the interviewer's smile?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) A huge, uncontrolled burst of laughter</button>
+<button class="quiz-opt" data-correct="true">B) A smile he was holding back to stay professional</button>
+<button class="quiz-opt" data-correct="false">C) An angry, forced expression</button>
+<button class="quiz-opt" data-correct="false">D) A completely blank expression</button>
+</div>
+<div class="quiz-feedback" data-explain="「Restrained」指克制的、忍住的，這裡形容面試官為了保持專業，努力忍住不笑出來的微妙表情。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. How did the interview ultimately end?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The interviewer ended the call immediately</button>
+<button class="quiz-opt" data-correct="false">B) The narrator refused to explain and hung up</button>
+<button class="quiz-opt" data-correct="true">C) Both people laughed, and the interviewer said it was his most memorable interview of the year</button>
+<button class="quiz-opt" data-correct="false">D) The narrator was told they didn't get the job</button>
+</div>
+<div class="quiz-feedback" data-explain="兩人最後都笑了出來，面試官還表示，這是他當年主持過最令人難忘的一場面試。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Flower Crown Meeting</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~4 min</span>
-        <span data-en="Video Call Life · The Filter Nobody Turned Off" data-zh="視訊日常 · 沒人記得關掉的濾鏡">Video Call Life · The Filter Nobody Turned Off</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Video Meeting · The Filter That Stayed On</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">The night before, I had been on a video call with my younger cousin, testing out a silly app that added animated flower crowns, sparkling cheeks, and enormous cartoon eyes to your face. It was ridiculous, and we laughed for almost an hour.</p>
-        <div class="para-trans">前一天晚上，我和表妹在視訊聊天，一起試玩一款會在臉上加上動畫花冠、閃亮腮紅和誇張卡通大眼睛的搞笑濾鏡App。整個過程蠢到不行，我們笑了將近一個小時。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The next morning, running late for an important video interview for a job I genuinely wanted, I grabbed my laptop, opened my usual video call software, and joined the meeting in a frantic rush, barely glancing at my own camera preview.</p>
-        <div class="para-trans">隔天早上，我為了一場真心很想爭取的工作視訊面試而手忙腳亂，抓起筆電，打開平常用的視訊軟體，匆匆忙忙加入了會議，甚至幾乎沒瞄一眼自己的鏡頭預覽畫面。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">What I did not realize was that the video call software had somehow kept the last-used camera filter active from an entirely different app the night before, and it had, without my knowledge, carried over into this very serious, very professional meeting.</p>
-        <div class="para-trans">而我完全不知道的是，我的視訊軟體不知怎地，把前一晚另一款App所使用的鏡頭濾鏡設定，一併沿用了下來，在我毫不知情的情況下，就這樣帶進了這場極其正式、極其專業的面試會議裡。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The interviewer, a senior manager named Mr. Okafor, appeared on my screen looking perfectly professional in a crisp gray suit. I greeted him warmly and began answering his first question about my previous work experience, feeling calm and prepared.</p>
-        <div class="para-trans">面試官奧卡福先生的畫面出現在我的螢幕上，穿著一身筆挺的灰色西裝，看起來十分專業。我熱情地向他打招呼，並開始回答他關於我過往工作經驗的第一個問題，感覺自己既冷靜又有準備。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">He was polite throughout, nodding along, but I noticed a very faint, <span class="vocab" data-word="restrained" data-pos="adjective" data-phonetic="/rɪˈstreɪnd/" data-meaning="克制的、忍住的" data-eg="a restrained smile">restrained</span> smile tugging at the corner of his mouth that I couldn't quite make sense of, especially during what I thought were fairly serious answers about project management.</p>
-        <div class="para-trans">整場面試他都表現得十分有禮貌，頻頻點頭，但我注意到他嘴角似乎一直帶著一絲極其克制、忍住不笑的微笑，讓我摸不著頭緒，尤其是在我回答一些關於專案管理、我自認相當嚴肅的問題時。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">About fifteen minutes in, he finally asked, with visible effort to remain professional, "I don't mean to interrupt, but are you aware there's a flower crown and some sparkles on your face right now?" I froze completely.</p>
-        <div class="para-trans">大約十五分鐘後，他終於忍不住開口，語氣中透著明顯克制的專業感：「我不是想打斷你，只是……你知道自己臉上現在頂著一個花冠，還有一些閃亮亮的東西嗎？」我整個人瞬間僵住。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I glanced down at my own video preview for the first time that entire call and there I was: enormous sparkling cartoon eyes, a crown of animated daisies slowly rotating above my head, and pink sparkles drifting gently across my cheeks every time I blinked.</p>
-        <div class="para-trans">我這才在整場面試中第一次低頭看向自己的鏡頭預覽畫面——結果看到的自己：一雙誇張閃亮的卡通大眼睛，頭頂上一圈緩緩旋轉的動畫雛菊花冠，還有每次眨眼都會輕輕飄過臉頰的粉紅色亮片。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I laughed so suddenly and so loudly that I startled myself, quickly explained about my cousin's silly app the night before, and fumbled through the settings to turn it off. Mr. Okafor laughed too, genuinely this time, and said it was, without question, the most memorable interview he'd conducted all year.</p>
-        <div class="para-trans">我突然爆出一陣連自己都被嚇到的大笑，趕緊解釋前一晚跟表妹玩那款搞笑App的來龍去脈，同時手忙腳亂地在設定裡把濾鏡關掉。奧卡福先生這次也真心笑了出來，並表示這無疑是他今年主持過、最令人難忘的一場面試。</div>
-      </div>
-    </article>
-
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. Where did the flower crown filter actually come from?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The interviewer added it as a prank</button>
-          <button class="quiz-opt" data-correct="true">B) It carried over from a silly app used the night before with a cousin</button>
-          <button class="quiz-opt" data-correct="false">C) It was a default setting of the interview software</button>
-          <button class="quiz-opt" data-correct="false">D) A software virus added it</button>
-        </div>
-        <div class="quiz-feedback" data-explain="前一晚跟表妹玩搞笑濾鏡App所設定的花冠濾鏡，不知怎地被沿用到了隔天的視訊面試軟體裡。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. What does "restrained" describe about the interviewer's smile?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) A huge, uncontrolled burst of laughter</button>
-          <button class="quiz-opt" data-correct="true">B) A smile he was holding back to stay professional</button>
-          <button class="quiz-opt" data-correct="false">C) An angry, forced expression</button>
-          <button class="quiz-opt" data-correct="false">D) A completely blank expression</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Restrained」指克制的、忍住的，這裡形容面試官為了保持專業，努力忍住不笑出來的微妙表情。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. How did the interview ultimately end?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The interviewer ended the call immediately</button>
-          <button class="quiz-opt" data-correct="false">B) The narrator refused to explain and hung up</button>
-          <button class="quiz-opt" data-correct="true">C) Both people laughed, and the interviewer said it was his most memorable interview of the year</button>
-          <button class="quiz-opt" data-correct="false">D) The narrator was told they didn't get the job</button>
-        </div>
-        <div class="quiz-feedback" data-explain="兩人最後都笑了出來，面試官還表示，這是他當年主持過最令人難忘的一場面試。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

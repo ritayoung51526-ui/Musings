@@ -308,7 +308,7 @@ def append_to_index(index_path, filename, data):
     card = f"""
       <!-- Auto-generated Story: {data['title']} -->
       <div class="story-card">
-        <div class="card-img">{data.get('scene', 'Everyday Story')}</div>
+        <div class="card-color-bar"></div>
         <div class="card-body">
           <h2>{data['title']}</h2>
           <div class="meta" style="margin-bottom: 8px;">

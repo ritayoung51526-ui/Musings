@@ -1,161 +1,147 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Wrong Seat – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Wrong Seat – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The Wrong Seat</h1>
+<div class="meta">
+<span class="badge short">Short · ~3 min</span>
+<span data-en="Public Transit · Everyday Cringe" data-zh="大眾交通 · 日常坐錯位尷尬">Public Transit · Everyday Cringe</span>
+</div>
+</header>
+<div class="hero">Bus · Occupied Seat Incident</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<!-- Voice TTS Player Bar -->
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">The bus was crowded enough that people were already standing in the <span class="vocab" data-eg="standing in the aisle" data-meaning="車廂走道、過道" data-phonetic="/aɪl/" data-pos="noun" data-word="aisle">aisle</span>.</p>
+<div class="para-trans">公車上十分擁擠，走道上早已站滿了乘客。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I got on at the usual stop, backpack <span class="vocab" data-eg="backpack digging into my shoulder" data-meaning="沉重地壓入、勒進（肩膀）" data-phonetic="/ˈdɪɡ.ɪŋ ˈɪn.tuː/" data-pos="phrase" data-word="digging into">digging into</span> my shoulder, and scanned for any empty seat. Near the middle there was one that looked free. A jacket was <span class="vocab" data-eg="A jacket was draped over the back" data-meaning="隨意搭在、披掛在椅背上" data-phonetic="/dreɪpt/" data-pos="verb" data-word="draped">draped</span> over the back, but the seat itself was empty. I figured the owner was standing somewhere or had gotten off without taking it.</p>
+<div class="para-trans">我在平時的站牌上車，沉重的背包緊緊勒著我的肩膀。我環顧四周尋找空位，在車廂中間看到了一個看似無人的座位。雖然椅背上搭著一件外套，但座位本身空無一人。我心想物主大概站在別處，或是下車時忘了拿走。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I sat down.</p>
+<div class="para-trans">我坐了下來。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Two stops later a guy came back from the front of the bus holding a drink. He stopped in the aisle and looked at me.</p>
+<div class="para-trans">過了兩站，一個手裡拿著飲料的年輕男子從車廂前端走了回來。他在走道中間停下腳步，靜靜地看著我。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“That’s my seat,” he said. Not loud. Not <span class="vocab" data-eg="Not loud. Not aggressive. Just clear." data-meaning="具攻擊性的、氣勢洶洶的" data-phonetic="/əˈɡres.ɪv/" data-pos="adjective" data-word="aggressive">aggressive</span>. Just clear.</p>
+<div class="para-trans">「那是我的座位，」他說道。聲音不高，沒有絲毫挑釁或攻擊性，卻字字清晰無比。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I stood up so fast my bag <span class="vocab" data-eg="my bag swung into the person behind me" data-meaning="（背包）猛然甩向、撞到" data-phonetic="/swʌŋ/" data-pos="phrase" data-word="swung into">swung into</span> the person behind me. “Sorry—I thought—”</p>
+<div class="para-trans">我猛地彈站起來，速度快得連背包都直接撞到了身後的乘客。「抱歉——我以為——」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">“It’s fine,” he said, but he didn’t smile. He sat down, put his drink in the cup holder, and looked out the window like the conversation was already over.</p>
+<div class="para-trans">「沒事，」他淡淡地說，但臉上毫無笑容。他坐了下來，將飲料放進杯架，隨即轉頭望向窗外，彷彿這場對話在開口的一瞬間就已經徹底結束。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The people standing near us had gone quiet. I could feel the attention even though no one was staring directly. I moved further down the aisle and held the pole, face hot, counting the remaining stops in my head.</p>
+<div class="para-trans">身旁原本站著的人群瞬間安靜了下來。雖然沒有人直接盯著我看，但我依然能感受到所有人的注意力全落在我身上。我默默挪向走道深處，緊緊握著扶桿，臉頰滾燙，只能在腦海裡一遍又一遍數著剩下的站數。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">When my stop finally came I got off without looking back. The air outside felt colder than it should have.</p>
+<div class="para-trans">當我的下車點終於抵達時，我頭也不回地衝下了公車。外頭清冷的空氣刺在臉上，顯得比平日更加寒冷。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">It was such a small thing. People sit in the wrong seat all the time. It happens. But the way he said “that’s my seat” — <span class="vocab" data-eg="flat, unsurprised" data-meaning="平淡無起伏的、漠然的" data-phonetic="/flæt/" data-pos="adjective" data-word="flat">flat</span>, unsurprised, like he’d been waiting for someone to make exactly that mistake — <span class="vocab" data-eg="stuck with me longer than it should have" data-meaning="深深烙印在腦海、久久難以忘懷" data-phonetic="/stʌk wɪð miː/" data-pos="idiom" data-word="stuck with me">stuck with me</span> longer than it should have.</p>
+<div class="para-trans">這原本只是件微不足道的小事。生活中大家難免會坐錯位置，這種事時常發生。但他那句「那是我的座位」說得過於平淡、毫無波瀾，彷彿他早就預見到會有人犯下這個愚蠢的錯誤一樣——那種語調在我心裡留下的印記，遠比這件事本身久遠得多。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">For the rest of the week I stood on the bus even when there were empty seats. <span class="vocab" data-eg="Just in case." data-meaning="以防萬一、保險起見" data-phonetic="/dʒʌst ɪn keɪs/" data-pos="idiom" data-word="Just in case">Just in case</span>.</p>
+<div class="para-trans">在那週剩下的日子裡，即便公車上有空位，我都選擇一路站到底。純粹是為了以防萬一。</div>
+</div>
+</article>
+<!-- Quick Quiz Section -->
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. Why did the narrator think the seat was empty?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) The bus driver announced all seats were free</button>
+<button class="quiz-opt" data-correct="true">B) Only a jacket was draped on the back, but nobody was sitting there</button>
+<button class="quiz-opt" data-correct="false">C) A passenger told the narrator to sit down</button>
+<button class="quiz-opt" data-correct="false">D) The bus was completely empty</button>
+</div>
+<div class="quiz-feedback" data-explain="椅背上雖然掛著一件外套，但座位上並沒有人，主角以為物主站在別處或已經下車。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. How did the guy deliver the phrase "That's my seat"?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Screaming angrily at the top of his lungs</button>
+<button class="quiz-opt" data-correct="true">B) Flat, clear, and without emotion</button>
+<button class="quiz-opt" data-correct="false">C) With a friendly laugh and a wink</button>
+<button class="quiz-opt" data-correct="false">D) By tapping the narrator politely on the shoulder</button>
+</div>
+<div class="quiz-feedback" data-explain="男子說這句話時不高亢也不兇，語調極度平淡而清晰，卻讓人感覺更加無地自容。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. What does the idiom "stuck with me" mean?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Literally glued to my clothing</button>
+<button class="quiz-opt" data-correct="true">B) Remained in my memory and thoughts for a long time</button>
+<button class="quiz-opt" data-correct="false">C) Following me physically on the street</button>
+<button class="quiz-opt" data-correct="false">D) Trapped in a crowded room</button>
+</div>
+<div class="quiz-feedback" data-explain="「Stuck with me」意指某個畫面、聲音或經歷深深烙印在心底，久久無法釋懷。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Wrong Seat</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~3 min</span>
-        <span data-en="Public Transit · Everyday Cringe" data-zh="大眾交通 · 日常坐錯位尷尬">Public Transit · Everyday Cringe</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Bus · Occupied Seat Incident</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <!-- Voice TTS Player Bar -->
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">The bus was crowded enough that people were already standing in the <span class="vocab" data-word="aisle" data-pos="noun" data-phonetic="/aɪl/" data-meaning="車廂走道、過道" data-eg="standing in the aisle">aisle</span>.</p>
-        <div class="para-trans">公車上十分擁擠，走道上早已站滿了乘客。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I got on at the usual stop, backpack <span class="vocab" data-word="digging into" data-pos="phrase" data-phonetic="/ˈdɪɡ.ɪŋ ˈɪn.tuː/" data-meaning="沉重地壓入、勒進（肩膀）" data-eg="backpack digging into my shoulder">digging into</span> my shoulder, and scanned for any empty seat. Near the middle there was one that looked free. A jacket was <span class="vocab" data-word="draped" data-pos="verb" data-phonetic="/dreɪpt/" data-meaning="隨意搭在、披掛在椅背上" data-eg="A jacket was draped over the back">draped</span> over the back, but the seat itself was empty. I figured the owner was standing somewhere or had gotten off without taking it.</p>
-        <div class="para-trans">我在平時的站牌上車，沉重的背包緊緊勒著我的肩膀。我環顧四周尋找空位，在車廂中間看到了一個看似無人的座位。雖然椅背上搭著一件外套，但座位本身空無一人。我心想物主大概站在別處，或是下車時忘了拿走。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I sat down.</p>
-        <div class="para-trans">我坐了下來。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Two stops later a guy came back from the front of the bus holding a drink. He stopped in the aisle and looked at me.</p>
-        <div class="para-trans">過了兩站，一個手裡拿著飲料的年輕男子從車廂前端走了回來。他在走道中間停下腳步，靜靜地看著我。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“That’s my seat,” he said. Not loud. Not <span class="vocab" data-word="aggressive" data-pos="adjective" data-phonetic="/əˈɡres.ɪv/" data-meaning="具攻擊性的、氣勢洶洶的" data-eg="Not loud. Not aggressive. Just clear.">aggressive</span>. Just clear.</p>
-        <div class="para-trans">「那是我的座位，」他說道。聲音不高，沒有絲毫挑釁或攻擊性，卻字字清晰無比。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I stood up so fast my bag <span class="vocab" data-word="swung into" data-pos="phrase" data-phonetic="/swʌŋ/" data-meaning="（背包）猛然甩向、撞到" data-eg="my bag swung into the person behind me">swung into</span> the person behind me. “Sorry—I thought—”</p>
-        <div class="para-trans">我猛地彈站起來，速度快得連背包都直接撞到了身後的乘客。「抱歉——我以為——」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">“It’s fine,” he said, but he didn’t smile. He sat down, put his drink in the cup holder, and looked out the window like the conversation was already over.</p>
-        <div class="para-trans">「沒事，」他淡淡地說，但臉上毫無笑容。他坐了下來，將飲料放進杯架，隨即轉頭望向窗外，彷彿這場對話在開口的一瞬間就已經徹底結束。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The people standing near us had gone quiet. I could feel the attention even though no one was staring directly. I moved further down the aisle and held the pole, face hot, counting the remaining stops in my head.</p>
-        <div class="para-trans">身旁原本站著的人群瞬間安靜了下來。雖然沒有人直接盯著我看，但我依然能感受到所有人的注意力全落在我身上。我默默挪向走道深處，緊緊握著扶桿，臉頰滾燙，只能在腦海裡一遍又一遍數著剩下的站數。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">When my stop finally came I got off without looking back. The air outside felt colder than it should have.</p>
-        <div class="para-trans">當我的下車點終於抵達時，我頭也不回地衝下了公車。外頭清冷的空氣刺在臉上，顯得比平日更加寒冷。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">It was such a small thing. People sit in the wrong seat all the time. It happens. But the way he said “that’s my seat” — <span class="vocab" data-word="flat" data-pos="adjective" data-phonetic="/flæt/" data-meaning="平淡無起伏的、漠然的" data-eg="flat, unsurprised">flat</span>, unsurprised, like he’d been waiting for someone to make exactly that mistake — <span class="vocab" data-word="stuck with me" data-pos="idiom" data-phonetic="/stʌk wɪð miː/" data-meaning="深深烙印在腦海、久久難以忘懷" data-eg="stuck with me longer than it should have">stuck with me</span> longer than it should have.</p>
-        <div class="para-trans">這原本只是件微不足道的小事。生活中大家難免會坐錯位置，這種事時常發生。但他那句「那是我的座位」說得過於平淡、毫無波瀾，彷彿他早就預見到會有人犯下這個愚蠢的錯誤一樣——那種語調在我心裡留下的印記，遠比這件事本身久遠得多。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">For the rest of the week I stood on the bus even when there were empty seats. <span class="vocab" data-word="Just in case" data-pos="idiom" data-phonetic="/dʒʌst ɪn keɪs/" data-meaning="以防萬一、保險起見" data-eg="Just in case.">Just in case</span>.</p>
-        <div class="para-trans">在那週剩下的日子裡，即便公車上有空位，我都選擇一路站到底。純粹是為了以防萬一。</div>
-      </div>
-    </article>
-
-    
-    
-
-    <!-- Quick Quiz Section -->
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. Why did the narrator think the seat was empty?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) The bus driver announced all seats were free</button>
-          <button class="quiz-opt" data-correct="true">B) Only a jacket was draped on the back, but nobody was sitting there</button>
-          <button class="quiz-opt" data-correct="false">C) A passenger told the narrator to sit down</button>
-          <button class="quiz-opt" data-correct="false">D) The bus was completely empty</button>
-        </div>
-        <div class="quiz-feedback" data-explain="椅背上雖然掛著一件外套，但座位上並沒有人，主角以為物主站在別處或已經下車。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. How did the guy deliver the phrase "That's my seat"?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Screaming angrily at the top of his lungs</button>
-          <button class="quiz-opt" data-correct="true">B) Flat, clear, and without emotion</button>
-          <button class="quiz-opt" data-correct="false">C) With a friendly laugh and a wink</button>
-          <button class="quiz-opt" data-correct="false">D) By tapping the narrator politely on the shoulder</button>
-        </div>
-        <div class="quiz-feedback" data-explain="男子說這句話時不高亢也不兇，語調極度平淡而清晰，卻讓人感覺更加無地自容。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. What does the idiom "stuck with me" mean?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Literally glued to my clothing</button>
-          <button class="quiz-opt" data-correct="true">B) Remained in my memory and thoughts for a long time</button>
-          <button class="quiz-opt" data-correct="false">C) Following me physically on the street</button>
-          <button class="quiz-opt" data-correct="false">D) Trapped in a crowded room</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Stuck with me」意指某個畫面、聲音或經歷深深烙印在心底，久久無法釋懷。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
-  
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

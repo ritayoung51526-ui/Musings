@@ -1,140 +1,133 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Treadmill Launch – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Treadmill Launch – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The Treadmill Launch</h1>
+<div class="meta">
+<span class="badge short">Short · ~4 min</span>
+<span data-en="Gym Life · The Speed Button Mistake" data-zh="健身房日常 · 速度按鈕的悲劇">Gym Life · The Speed Button Mistake</span>
+</div>
+</header>
+<div class="hero">Fitness Center · The Runaway Treadmill</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">It was New Year's Day, which meant the gym was packed with a very specific type of crowd: people who had made resolutions exactly twenty-four hours earlier and were determined to prove they meant it. I was, unfortunately, one of them.</p>
+<div class="para-trans">那天是元旦，這也代表健身房裡擠滿了一種非常特定的人群：那些整整二十四小時前才剛許下新年新希望、並決心證明自己是認真的人。而很不幸地，我正是其中一員。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I hadn't set foot on a treadmill in roughly eight months, but I strode up to one in the middle of the row with the misplaced confidence of someone who had clearly forgotten that fact entirely.</p>
+<div class="para-trans">我大概已經有八個月沒踩過跑步機了，但我還是大搖大擺地走向排在正中間的一台，帶著一種顯然徹底忘記這個事實的、錯置的自信。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I placed my phone in the little holder, put in my earbuds, and pressed what I believed was the "start" button. In reality, in my haste to look effortlessly athletic, I had accidentally pressed the speed button five separate times.</p>
+<div class="para-trans">我把手機放進小小的置物架，戴上耳機，按下了我以為是「開始」的按鈕。但實際上，因為急著想營造出一種毫不費力的運動員氣場，我不小心把加速按鈕連按了整整五下。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The belt lurched to life at a speed most reasonably reserved for Olympic sprinters. My feet, still expecting a gentle warm-up walk, were caught completely off guard, and my body was instantly flung backward with startling force.</p>
+<div class="para-trans">跑步帶猛然啟動，那個速度合理來說只該保留給奧運短跑選手。我的雙腳，原本還預期著一段悠閒的熱身慢走，完全措手不及，整個人瞬間被一股驚人的力道向後拋飛出去。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I windmilled my arms, made a sound I can only describe as a startled goose honking, and grabbed desperately at the safety handles, which did absolutely nothing to slow my <span class="vocab" data-eg="my backward trajectory" data-meaning="運行軌跡、飛行路線" data-phonetic="/trəˈdʒek.tər.i/" data-pos="noun" data-word="trajectory">trajectory</span> toward the treadmill behind me.</p>
+<div class="para-trans">我的雙臂像風車一樣胡亂揮舞，發出一種只能形容為受驚鵝叫的怪聲，然後死命抓向安全扶手，但那根本無法減緩我向後撞向身後那台跑步機的飛行軌跡。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I landed, sprawled, half on and half off the machine behind me, my earbuds flying across the gym floor and skidding under a rack of dumbbells. The treadmill I had abandoned kept running at full speed, empty, belt slapping loudly against nothing.</p>
+<div class="para-trans">我整個人摔成大字型，半個身子掛在身後那台跑步機上，另一半懸在外面，耳機飛出去滑過整個健身房地板，一路滑進啞鈴架底下。而我剛剛逃離的那台跑步機，依然全速運轉著，空無一人，跑步帶「啪嗒啪嗒」地拍打著空氣。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">Every single person on the cardio row turned to stare. A gym staff member sprinted over, hit the emergency stop, and asked, with genuine concern, if I needed a doctor. I did not need a doctor. I needed the ground to open up.</p>
+<div class="para-trans">整排有氧運動區的人全部轉頭盯著我看。一位健身房工作人員飛快衝過來，按下緊急停止鈕，帶著真切的關心問我是否需要叫醫生。我不需要醫生。我需要的是地面裂開一個洞。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I insisted, with as much composure as I could fake, that I was fine, gathered my things, and left the gym eleven minutes after arriving. My New Year's resolution to "work out more" quietly transformed into "walk outside instead, where the ground doesn't move on its own."</p>
+<div class="para-trans">我盡可能假裝鎮定地堅稱自己沒事，收拾好東西，在抵達健身房僅僅十一分鐘後便離開了。我的新年新希望「多多運動」，悄悄地演變成了「改去戶外散步，那裡的地面至少不會自己亂動」。</div>
+</div>
+</article>
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. What actually caused the treadmill to speed up so suddenly?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) A gym staff member did it as a joke</button>
+<button class="quiz-opt" data-correct="true">B) The narrator accidentally pressed the speed button five times instead of "start"</button>
+<button class="quiz-opt" data-correct="false">C) The machine was broken</button>
+<button class="quiz-opt" data-correct="false">D) Another gym member bumped into it</button>
+</div>
+<div class="quiz-feedback" data-explain="主角原本以為自己按的是「開始」鍵，結果其實不小心連按了五次加速按鈕，導致跑步帶瞬間全速啟動。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. What does "trajectory" mean in this context?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) A type of exercise machine</button>
+<button class="quiz-opt" data-correct="true">B) The path or direction something travels through the air</button>
+<button class="quiz-opt" data-correct="false">C) A gym membership plan</button>
+<button class="quiz-opt" data-correct="false">D) A warm-up routine</button>
+</div>
+<div class="quiz-feedback" data-explain="「Trajectory」指運行軌跡、飛行路線，這裡形容主角被彈飛後往後方跑步機撞去的路徑。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. How did the narrator's New Year's resolution change by the end of the story?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) They decided to hire a personal trainer</button>
+<button class="quiz-opt" data-correct="false">B) They quit exercising altogether</button>
+<button class="quiz-opt" data-correct="true">C) They switched from gym workouts to walking outside instead</button>
+<button class="quiz-opt" data-correct="false">D) They joined a different, fancier gym</button>
+</div>
+<div class="quiz-feedback" data-explain="經歷這次意外後，主角把「多多運動」的新年新希望，悄悄改成了改去戶外散步，避開會自己亂動的跑步機。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Treadmill Launch</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~4 min</span>
-        <span data-en="Gym Life · The Speed Button Mistake" data-zh="健身房日常 · 速度按鈕的悲劇">Gym Life · The Speed Button Mistake</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Fitness Center · The Runaway Treadmill</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">It was New Year's Day, which meant the gym was packed with a very specific type of crowd: people who had made resolutions exactly twenty-four hours earlier and were determined to prove they meant it. I was, unfortunately, one of them.</p>
-        <div class="para-trans">那天是元旦，這也代表健身房裡擠滿了一種非常特定的人群：那些整整二十四小時前才剛許下新年新希望、並決心證明自己是認真的人。而很不幸地，我正是其中一員。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I hadn't set foot on a treadmill in roughly eight months, but I strode up to one in the middle of the row with the misplaced confidence of someone who had clearly forgotten that fact entirely.</p>
-        <div class="para-trans">我大概已經有八個月沒踩過跑步機了，但我還是大搖大擺地走向排在正中間的一台，帶著一種顯然徹底忘記這個事實的、錯置的自信。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I placed my phone in the little holder, put in my earbuds, and pressed what I believed was the "start" button. In reality, in my haste to look effortlessly athletic, I had accidentally pressed the speed button five separate times.</p>
-        <div class="para-trans">我把手機放進小小的置物架，戴上耳機，按下了我以為是「開始」的按鈕。但實際上，因為急著想營造出一種毫不費力的運動員氣場，我不小心把加速按鈕連按了整整五下。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The belt lurched to life at a speed most reasonably reserved for Olympic sprinters. My feet, still expecting a gentle warm-up walk, were caught completely off guard, and my body was instantly flung backward with startling force.</p>
-        <div class="para-trans">跑步帶猛然啟動，那個速度合理來說只該保留給奧運短跑選手。我的雙腳，原本還預期著一段悠閒的熱身慢走，完全措手不及，整個人瞬間被一股驚人的力道向後拋飛出去。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I windmilled my arms, made a sound I can only describe as a startled goose honking, and grabbed desperately at the safety handles, which did absolutely nothing to slow my <span class="vocab" data-word="trajectory" data-pos="noun" data-phonetic="/trəˈdʒek.tər.i/" data-meaning="運行軌跡、飛行路線" data-eg="my backward trajectory">trajectory</span> toward the treadmill behind me.</p>
-        <div class="para-trans">我的雙臂像風車一樣胡亂揮舞，發出一種只能形容為受驚鵝叫的怪聲，然後死命抓向安全扶手，但那根本無法減緩我向後撞向身後那台跑步機的飛行軌跡。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I landed, sprawled, half on and half off the machine behind me, my earbuds flying across the gym floor and skidding under a rack of dumbbells. The treadmill I had abandoned kept running at full speed, empty, belt slapping loudly against nothing.</p>
-        <div class="para-trans">我整個人摔成大字型，半個身子掛在身後那台跑步機上，另一半懸在外面，耳機飛出去滑過整個健身房地板，一路滑進啞鈴架底下。而我剛剛逃離的那台跑步機，依然全速運轉著，空無一人，跑步帶「啪嗒啪嗒」地拍打著空氣。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">Every single person on the cardio row turned to stare. A gym staff member sprinted over, hit the emergency stop, and asked, with genuine concern, if I needed a doctor. I did not need a doctor. I needed the ground to open up.</p>
-        <div class="para-trans">整排有氧運動區的人全部轉頭盯著我看。一位健身房工作人員飛快衝過來，按下緊急停止鈕，帶著真切的關心問我是否需要叫醫生。我不需要醫生。我需要的是地面裂開一個洞。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I insisted, with as much composure as I could fake, that I was fine, gathered my things, and left the gym eleven minutes after arriving. My New Year's resolution to "work out more" quietly transformed into "walk outside instead, where the ground doesn't move on its own."</p>
-        <div class="para-trans">我盡可能假裝鎮定地堅稱自己沒事，收拾好東西，在抵達健身房僅僅十一分鐘後便離開了。我的新年新希望「多多運動」，悄悄地演變成了「改去戶外散步，那裡的地面至少不會自己亂動」。</div>
-      </div>
-    </article>
-
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. What actually caused the treadmill to speed up so suddenly?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) A gym staff member did it as a joke</button>
-          <button class="quiz-opt" data-correct="true">B) The narrator accidentally pressed the speed button five times instead of "start"</button>
-          <button class="quiz-opt" data-correct="false">C) The machine was broken</button>
-          <button class="quiz-opt" data-correct="false">D) Another gym member bumped into it</button>
-        </div>
-        <div class="quiz-feedback" data-explain="主角原本以為自己按的是「開始」鍵，結果其實不小心連按了五次加速按鈕，導致跑步帶瞬間全速啟動。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. What does "trajectory" mean in this context?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) A type of exercise machine</button>
-          <button class="quiz-opt" data-correct="true">B) The path or direction something travels through the air</button>
-          <button class="quiz-opt" data-correct="false">C) A gym membership plan</button>
-          <button class="quiz-opt" data-correct="false">D) A warm-up routine</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Trajectory」指運行軌跡、飛行路線，這裡形容主角被彈飛後往後方跑步機撞去的路徑。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. How did the narrator's New Year's resolution change by the end of the story?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) They decided to hire a personal trainer</button>
-          <button class="quiz-opt" data-correct="false">B) They quit exercising altogether</button>
-          <button class="quiz-opt" data-correct="true">C) They switched from gym workouts to walking outside instead</button>
-          <button class="quiz-opt" data-correct="false">D) They joined a different, fancier gym</button>
-        </div>
-        <div class="quiz-feedback" data-explain="經歷這次意外後，主角把「多多運動」的新年新希望，悄悄改成了改去戶外散步，避開會自己亂動的跑步機。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

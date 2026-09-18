@@ -1,140 +1,133 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Train Platform Sing-Along – Musings · 隨筆</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Train Platform Sing-Along – Musings · 隨筆</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
-      <a href="index.html" class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁">← Back to Musings</a>
-      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
-    </div>
+<div class="container">
+<div class="top-nav">
+<a class="back" data-en="← Back to Musings" data-zh="← 返回隨筆首頁" href="index.html">← Back to Musings</a>
+<button class="lang-toggle-btn" id="langToggleBtn">🌐 繁中</button>
+</div>
+<header>
+<h1>The Train Platform Sing-Along</h1>
+<div class="meta">
+<span class="badge short">Short · ~4 min</span>
+<span data-en="Commute Life · The Headphone Volume Mistake, Round Two" data-zh="通勤日常 · 耳機音量再次失控">Commute Life · The Headphone Volume Mistake, Round Two</span>
+</div>
+</header>
+<div class="hero">Subway Platform · The Accidental Concert</div>
+<div class="controls">
+<button class="btn" id="listenBtn">🎧 Listen Audio</button>
+<button class="btn secondary" id="dictToggleBtn">📖 Vocabulary: OFF</button>
+<button class="btn secondary" id="transToggleBtn">🌐 Translation: OFF</button>
+</div>
+<div class="audio-player-panel" id="audioPlayerPanel">
+<div class="audio-header">
+<span id="audioStatus">Audio ready</span>
+<div class="speed-group">
+<span>Speed:</span>
+<button class="speed-btn active" data-speed="0.85">0.85x</button>
+<button class="speed-btn" data-speed="0.95">0.95x</button>
+<button class="speed-btn" data-speed="1.1">1.1x</button>
+</div>
+</div>
+<div class="audio-controls">
+<button class="btn" id="audioPlayPauseBtn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
+<button class="btn secondary" id="audioStopBtn" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
+<span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
+</div>
+</div>
+<article class="story">
+<div class="story-para-group">
+<p class="para-en">There is a very particular kind of joy that comes from listening to your favorite song on a mostly empty train platform late at night, when you genuinely believe no one is paying attention to you. I had forgotten, entirely, about the existence of other human ears.</p>
+<div class="para-trans">在深夜幾乎空無一人的月台上，聽著自己最愛的歌曲，會湧現出一種非常特別的快樂，尤其當你真心相信根本沒有人在注意你的時候。而我，完全忘記了這個世界上還存在著其他人類的耳朵。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">It was almost eleven at night. I had just left a friend's apartment, was mildly exhausted, and had one specific song stuck in my head that I simply had to play at full volume. I put my headphones in and pressed play, standing near the edge of the empty platform.</p>
+<div class="para-trans">那時將近晚上十一點。我剛從朋友的公寓離開，帶著一種淡淡的疲憊感，腦海裡還單曲循環著一首非放到最大聲不可的歌。我戴上耳機按下播放鍵，站在幾乎空無一人的月台邊緣。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">The chorus hit, and something in me simply could not resist. I began singing along, quietly at first, then with increasing, <span class="vocab" data-eg="unbridled enthusiasm" data-meaning="不受約束的、毫無節制的" data-phonetic="/ʌnˈbraɪ.dəld/" data-pos="adjective" data-word="unbridled">unbridled</span> enthusiasm, complete with small hand gestures that I firmly believed added dramatic flair.</p>
+<div class="para-trans">副歌一下，我心裡某個部分再也無法克制。我開始跟著哼唱，一開始還算小聲，接著卻愈唱愈起勁、毫無節制，還配上一些我深信能為表演增添戲劇張力的小手勢。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">What I had not accounted for was that my headphones playing loud music into my own ears had made me completely deaf to my own singing volume—and I was, apparently, belting the chorus at what can only be described as full concert energy.</p>
+<div class="para-trans">而我完全沒有意識到的一點是，耳機裡震耳欲聾的音樂，讓我對自己歌唱的音量徹底失去了判斷力——而我當時，顯然正以一種只能形容為全開的演唱會能量，放聲高歌著那段副歌。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">A soft, muffled laugh cut through my personal concert. I turned, mid-lyric, one hand still dramatically raised in the air, to find three teenagers standing about ten feet away, filming me on their phones with barely contained delight.</p>
+<div class="para-trans">一陣低沉、被壓抑住的笑聲，穿透了我的個人演唱會。我在唱到一半時轉過身，其中一隻手還誇張地高舉在半空中，卻發現三個青少年站在大約十呎外，正用手機拍著我，臉上帶著幾乎藏不住的興奮。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I froze completely, headphones still blaring, hand still raised in the air like an unfinished statue. One of them gave me a genuine, encouraging thumbs up. "Don't stop on our account," he said, grinning. "That was actually kind of great."</p>
+<div class="para-trans">我整個人徹底僵住，耳機裡的音樂依然大聲放送著，那隻手也依然高舉在半空中，像一座還沒完工的雕像。其中一個孩子朝我豎起大拇指，語帶鼓勵：「別因為我們就停下來啊，」他咧嘴笑著說：「說真的，剛才那段還挺帶感的。」</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">I laughed, mortified but also somehow relieved, and pulled one earbud out. "How long were you watching?" I asked. "Long enough to learn the chorus," another one answered, and they all burst into laughter again, and honestly, so did I.</p>
+<div class="para-trans">我笑了出來，雖然羞愧到不行，卻也不知怎地鬆了一口氣，於是拔下了一邊耳機。「你們看了多久了？」我問道。「久到我們都學會副歌了，」另一個孩子答道，接著他們又一起爆笑出聲，而說實話，我也跟著一起笑了。</div>
+</div>
+<div class="story-para-group">
+<p class="para-en">My train arrived a minute later, and as the doors closed behind me, I could see them still laughing on the platform, one of them clearly replaying the video. I still listen to music on that platform, but now, I keep my mouth firmly, resolutely closed.</p>
+<div class="para-trans">一分鐘後我的列車進站了，車門在我身後關上時，我還能看見他們仍在月台上笑個不停，其中一個顯然正在重播那段影片。我現在還是會在那個月台上聽音樂，只是我的嘴巴，如今總是緊緊地、堅決地閉著。</div>
+</div>
+</article>
+<section class="quiz-section">
+<div class="quiz-header">
+<h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
+<p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">1. Why did the narrator think it was safe to sing loudly?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) A staff member gave permission</button>
+<button class="quiz-opt" data-correct="true">B) The platform seemed empty, and the loud headphones masked how loud the singing was</button>
+<button class="quiz-opt" data-correct="false">C) It was a designated karaoke area</button>
+<button class="quiz-opt" data-correct="false">D) Friends were there singing along too</button>
+</div>
+<div class="quiz-feedback" data-explain="主角以為月台幾乎沒人，而耳機裡震耳欲聾的音樂讓自己完全聽不出唱歌的音量已經失控。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">2. What does "unbridled" mean in this story?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) Quiet and controlled</button>
+<button class="quiz-opt" data-correct="true">B) Uncontrolled and full of energy</button>
+<button class="quiz-opt" data-correct="false">C) Nervous and hesitant</button>
+<button class="quiz-opt" data-correct="false">D) Slow and tired</button>
+</div>
+<div class="quiz-feedback" data-explain="「Unbridled」指不受約束的、毫無節制的，這裡形容主角愈唱愈忘我、毫不收斂的熱情。"></div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question">3. How did the teenagers react to catching the narrator singing?</div>
+<div class="quiz-options">
+<button class="quiz-opt" data-correct="false">A) They complained to station security</button>
+<button class="quiz-opt" data-correct="false">B) They walked away in disgust</button>
+<button class="quiz-opt" data-correct="true">C) They filmed it, laughed, and gave an encouraging thumbs up</button>
+<button class="quiz-opt" data-correct="false">D) They asked the narrator to stop immediately</button>
+</div>
+<div class="quiz-feedback" data-explain="三個青少年不但沒有生氣，反而拍下影片，笑著鼓勵主角繼續唱，甚至說那段表演還挺帶感的。"></div>
+</div>
+<div class="quiz-summary" id="quizSummary"></div>
+</section>
 
-    <header>
-      <h1>The Train Platform Sing-Along</h1>
-      <div class="meta">
-        <span class="badge short">Short · ~4 min</span>
-        <span data-en="Commute Life · The Headphone Volume Mistake, Round Two" data-zh="通勤日常 · 耳機音量再次失控">Commute Life · The Headphone Volume Mistake, Round Two</span>
-      </div>
-    </header>
+<footer class="site-footer" style="margin-top:40px; padding:30px 20px 24px; border-top:1px solid var(--border); text-align:center; font-size:0.88rem; color:#64748b;">
+<div class="footer-inner" style="max-width:800px; margin:0 auto;">
+<div class="footer-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+<a href="index.html" style="color:#334155; text-decoration:none; font-weight:600;">Home</a>
+<a href="about.html" style="color:#334155; text-decoration:none; font-weight:600;">About</a>
+<a href="contact.html" style="color:#334155; text-decoration:none; font-weight:600;">Contact</a>
+<a href="privacy.html" style="color:#334155; text-decoration:none; font-weight:600;">Privacy Policy</a>
+<a href="terms.html" style="color:#334155; text-decoration:none; font-weight:600;">Terms of Service</a>
+</div>
+<p class="footer-copy" style="margin:0; font-size:0.8rem; color:#94a3b8;">© 2026 Musings · Rita. All rights reserved.</p>
+</div>
+</footer>
 
-    <div class="hero">Subway Platform · The Accidental Concert</div>
-
-    <div class="controls">
-      <button id="listenBtn" class="btn">🎧 Listen Audio</button>
-      <button id="dictToggleBtn" class="btn secondary">📖 Vocabulary: OFF</button>
-      <button id="transToggleBtn" class="btn secondary">🌐 Translation: OFF</button>
-    </div>
-
-    <div id="audioPlayerPanel" class="audio-player-panel">
-      <div class="audio-header">
-        <span id="audioStatus">Audio ready</span>
-        <div class="speed-group">
-          <span>Speed:</span>
-          <button class="speed-btn active" data-speed="0.85">0.85x</button>
-          <button class="speed-btn" data-speed="0.95">0.95x</button>
-          <button class="speed-btn" data-speed="1.1">1.1x</button>
-        </div>
-      </div>
-      <div class="audio-controls">
-        <button id="audioPlayPauseBtn" class="btn" style="padding: 6px 14px; font-size: 0.85rem;">▶ Play</button>
-        <button id="audioStopBtn" class="btn secondary" style="padding: 6px 14px; font-size: 0.85rem;">⏹ Stop</button>
-        <span style="font-size: 0.8rem; color: var(--muted); margin-left: 8px;">Tip: Click any paragraph to jump there!</span>
-      </div>
-    </div>
-
-    <article class="story">
-      <div class="story-para-group">
-        <p class="para-en">There is a very particular kind of joy that comes from listening to your favorite song on a mostly empty train platform late at night, when you genuinely believe no one is paying attention to you. I had forgotten, entirely, about the existence of other human ears.</p>
-        <div class="para-trans">在深夜幾乎空無一人的月台上，聽著自己最愛的歌曲，會湧現出一種非常特別的快樂，尤其當你真心相信根本沒有人在注意你的時候。而我，完全忘記了這個世界上還存在著其他人類的耳朵。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">It was almost eleven at night. I had just left a friend's apartment, was mildly exhausted, and had one specific song stuck in my head that I simply had to play at full volume. I put my headphones in and pressed play, standing near the edge of the empty platform.</p>
-        <div class="para-trans">那時將近晚上十一點。我剛從朋友的公寓離開，帶著一種淡淡的疲憊感，腦海裡還單曲循環著一首非放到最大聲不可的歌。我戴上耳機按下播放鍵，站在幾乎空無一人的月台邊緣。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">The chorus hit, and something in me simply could not resist. I began singing along, quietly at first, then with increasing, <span class="vocab" data-word="unbridled" data-pos="adjective" data-phonetic="/ʌnˈbraɪ.dəld/" data-meaning="不受約束的、毫無節制的" data-eg="unbridled enthusiasm">unbridled</span> enthusiasm, complete with small hand gestures that I firmly believed added dramatic flair.</p>
-        <div class="para-trans">副歌一下，我心裡某個部分再也無法克制。我開始跟著哼唱，一開始還算小聲，接著卻愈唱愈起勁、毫無節制，還配上一些我深信能為表演增添戲劇張力的小手勢。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">What I had not accounted for was that my headphones playing loud music into my own ears had made me completely deaf to my own singing volume—and I was, apparently, belting the chorus at what can only be described as full concert energy.</p>
-        <div class="para-trans">而我完全沒有意識到的一點是，耳機裡震耳欲聾的音樂，讓我對自己歌唱的音量徹底失去了判斷力——而我當時，顯然正以一種只能形容為全開的演唱會能量，放聲高歌著那段副歌。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">A soft, muffled laugh cut through my personal concert. I turned, mid-lyric, one hand still dramatically raised in the air, to find three teenagers standing about ten feet away, filming me on their phones with barely contained delight.</p>
-        <div class="para-trans">一陣低沉、被壓抑住的笑聲，穿透了我的個人演唱會。我在唱到一半時轉過身，其中一隻手還誇張地高舉在半空中，卻發現三個青少年站在大約十呎外，正用手機拍著我，臉上帶著幾乎藏不住的興奮。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I froze completely, headphones still blaring, hand still raised in the air like an unfinished statue. One of them gave me a genuine, encouraging thumbs up. "Don't stop on our account," he said, grinning. "That was actually kind of great."</p>
-        <div class="para-trans">我整個人徹底僵住，耳機裡的音樂依然大聲放送著，那隻手也依然高舉在半空中，像一座還沒完工的雕像。其中一個孩子朝我豎起大拇指，語帶鼓勵：「別因為我們就停下來啊，」他咧嘴笑著說：「說真的，剛才那段還挺帶感的。」</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">I laughed, mortified but also somehow relieved, and pulled one earbud out. "How long were you watching?" I asked. "Long enough to learn the chorus," another one answered, and they all burst into laughter again, and honestly, so did I.</p>
-        <div class="para-trans">我笑了出來，雖然羞愧到不行，卻也不知怎地鬆了一口氣，於是拔下了一邊耳機。「你們看了多久了？」我問道。「久到我們都學會副歌了，」另一個孩子答道，接著他們又一起爆笑出聲，而說實話，我也跟著一起笑了。</div>
-      </div>
-
-      <div class="story-para-group">
-        <p class="para-en">My train arrived a minute later, and as the doors closed behind me, I could see them still laughing on the platform, one of them clearly replaying the video. I still listen to music on that platform, but now, I keep my mouth firmly, resolutely closed.</p>
-        <div class="para-trans">一分鐘後我的列車進站了，車門在我身後關上時，我還能看見他們仍在月台上笑個不停，其中一個顯然正在重播那段影片。我現在還是會在那個月台上聽音樂，只是我的嘴巴，如今總是緊緊地、堅決地閉著。</div>
-      </div>
-    </article>
-
-    <section class="quiz-section">
-      <div class="quiz-header">
-        <h2 data-en="💡 Quick Quiz" data-zh="💡 趣味閱讀小測驗">💡 Quick Quiz</h2>
-        <p data-en="Test what you picked up from the story!" data-zh="測測你看完故事後記住了多少生字與細節！">Test what you picked up from the story!</p>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">1. Why did the narrator think it was safe to sing loudly?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) A staff member gave permission</button>
-          <button class="quiz-opt" data-correct="true">B) The platform seemed empty, and the loud headphones masked how loud the singing was</button>
-          <button class="quiz-opt" data-correct="false">C) It was a designated karaoke area</button>
-          <button class="quiz-opt" data-correct="false">D) Friends were there singing along too</button>
-        </div>
-        <div class="quiz-feedback" data-explain="主角以為月台幾乎沒人，而耳機裡震耳欲聾的音樂讓自己完全聽不出唱歌的音量已經失控。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">2. What does "unbridled" mean in this story?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) Quiet and controlled</button>
-          <button class="quiz-opt" data-correct="true">B) Uncontrolled and full of energy</button>
-          <button class="quiz-opt" data-correct="false">C) Nervous and hesitant</button>
-          <button class="quiz-opt" data-correct="false">D) Slow and tired</button>
-        </div>
-        <div class="quiz-feedback" data-explain="「Unbridled」指不受約束的、毫無節制的，這裡形容主角愈唱愈忘我、毫不收斂的熱情。"></div>
-      </div>
-
-      <div class="quiz-item">
-        <div class="quiz-question">3. How did the teenagers react to catching the narrator singing?</div>
-        <div class="quiz-options">
-          <button class="quiz-opt" data-correct="false">A) They complained to station security</button>
-          <button class="quiz-opt" data-correct="false">B) They walked away in disgust</button>
-          <button class="quiz-opt" data-correct="true">C) They filmed it, laughed, and gave an encouraging thumbs up</button>
-          <button class="quiz-opt" data-correct="false">D) They asked the narrator to stop immediately</button>
-        </div>
-        <div class="quiz-feedback" data-explain="三個青少年不但沒有生氣，反而拍下影片，笑著鼓勵主角繼續唱，甚至說那段表演還挺帶感的。"></div>
-      </div>
-
-      <div id="quizSummary" class="quiz-summary"></div>
-    </section>
-
-    <footer>
-      <p>Musings · 100% Free Relatable Stories</p>
-    </footer>
-  </div>
-
-  <script src="story-engine.js"></script>
+</div>
+<script src="story-engine.js"></script>
 </body>
 </html>

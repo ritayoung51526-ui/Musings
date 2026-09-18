@@ -732,3 +732,59 @@ textarea.diary-input {
   border-color: #f7cac1;
   color: var(--accent);
 }
+
+/* Site Footer */
+.site-footer {
+  margin-top: 50px;
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  padding: 40px 20px 30px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+.footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer-brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+.footer-brand span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #64748b;
+}
+.footer-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+.footer-links a {
+  color: #334155;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.15s ease;
+}
+.footer-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.footer-copy {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin: 0;
+}
