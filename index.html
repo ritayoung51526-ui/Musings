@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musings – Real Stories, Honest Takes & Everyday Life</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding: 12px 16px 16px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+      color: #1a1a1a;
+      font-weight: 800;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .welcome-banner {
+      background: linear-gradient(135deg, #fef8f4 0%, #f4f8fe 100%);
+      border: 1px solid #e7edf5;
+      border-left: 5px solid var(--accent);
+      padding: 14px 18px;
+      margin-bottom: 24px;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.94rem;
+      color: #3e4854;
+      line-height: 1.55;
+    }
+    .welcome-banner strong { color: var(--accent); }
+    .story-card {
+      background: var(--card);
+      border-radius: 14px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .story-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .card-img {
+      width: 100%;
+      height: 135px;
+      background: linear-gradient(135deg, #fce8e2 0%, #e8f0fe 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .card-body { padding: 20px 22px 22px; }
+    .story-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      line-height: 1.3;
+      color: #1a1a1a;
+    }
+    .feature-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .tag {
+      background: #f4f0ec;
+      color: #555;
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .tag.highlight { background: #e8f5e9; color: #2e7d32; }
+    .story-card p {
+      color: #4a4a4a;
+      font-size: 0.96rem;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <span style="font-size:1.05rem; font-weight:800; color:var(--accent);">Musings · 隨筆</span>
+      <button id="langToggleBtn" class="lang-toggle-btn">🌐 繁中</button>
+    </div>
+
+    <header>
+      <h1 data-en="Musings" data-zh="隨筆 (Musings)">Musings</h1>
+      <p data-en="Real stories, honest takes, and little moments from everyday life." 
+         data-zh="真實故事、直白心聲，與記錄日常生活中的尷尬雜感。">Real stories, honest takes, and little moments from everyday life.</p>
+    </header>
+
+    <div class="welcome-banner">
+      <strong data-en="✨ Honest, No-Nonsense Reading:" data-zh="✨ 真實隨筆，無負擔閱讀：">✨ Honest, No-Nonsense Reading:</strong> 
+      <span data-en="Short stories and conversational thoughts written from a regular human perspective. Built with voice audio, plus optional Chinese translation notes for bilingual readers."
+            data-zh="從普通人真實視角出發的生活短篇與話題雜感。內置語音朗讀，讀者亦可隨時在故事內開啟中文對照與生字註釋。">Short stories and conversational thoughts written from a regular human perspective. Built with voice audio, plus optional Chinese translation notes for bilingual readers.</span>
+    </div>
+
+    <!-- Category Tabs Navigation -->
+    <div class="category-tabs-container">
+      <div class="category-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="tab-stories" data-en="😳 Awkward Stories" data-zh="😳 尷尬日常 (Stories)">😳 Awkward Stories</button>
+        <button class="tab-btn" data-tab="tab-realtalk" data-en="💭 Real Talk / Topics" data-zh="💭 話題隨筆 (Real Talk)">💭 Real Talk / Topics</button>
+        <button class="tab-btn" data-tab="tab-diary" data-en="📔 Anonymous Diary" data-zh="📔 心情樹洞 (Diary)">📔 Anonymous Diary</button>
+        <button class="tab-btn" data-tab="tab-fables" data-en="📖 Life Lessons" data-zh="📖 哲理隨筆 (Lessons)">📖 Life Lessons</button>
+        <button class="tab-btn" data-tab="tab-bedtime" data-en="🌙 Late Night Thoughts" data-zh="🌙 深夜漫談 (Late Night)">🌙 Late Night Thoughts</button>
+      </div>
+    </div>
+
+    <!-- TAB 1: AWKWARD STORIES (MAIN) -->
+    <div id="tab-stories" class="tab-pane active">
+      <!-- Story 1 -->
+      <div class="story-card">
+        <div class="card-img">Classroom · The Raised Hand Incident</div>
+        <div class="card-body">
+          <h2>The Wrong Name</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge short">Short · ~4 min</span>
+            <span data-en="High School Lit · Classroom Cringe" data-zh="高中課堂 · 令人腳趾摳地的尷尬">High School Lit · Classroom Cringe</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="You raise your hand with burning confidence on The Great Gatsby. The teacher smiles, points right at you, and enthusiastically calls on the sleeping boy behind you."
+             data-zh="你自信滿滿地舉手準備回答《大亨小傳》的問題。老師微笑著指向你這個方向，卻興高采烈地叫醒了正趴在你身後睡覺的男同學……">You raise your hand with burning confidence on The Great Gatsby. The teacher smiles, points right at you, and enthusiastically calls on the sleeping boy behind you.</p>
+          <a href="story-wrong-name.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="story-card">
+        <div class="card-img">School Gate · Mother & Daughter</div>
+        <div class="card-body">
+          <h2>The Blessing at the Gate</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge medium">Medium · ~10 min</span>
+            <span data-en="Family & Growing Up · Overprotective Love" data-zh="家庭與成長 · 令人矛盾的母愛">Family & Growing Up · Overprotective Love</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="Your mom still waits at the school gate every single day to place a hand on your head and give you a blessing in front of everyone. You love her. That’s why it hurts."
+             data-zh="母親每天依然守在校門口，在全校同學注視下撫摸你的頭頂為你祝福。你深愛著她，而這正是讓人無比難為情的原因。">Your mom still waits at the school gate every single day to place a hand on your head and give you a blessing in front of everyone. You love her. That’s why it hurts.</p>
+          <a href="story-blessing.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+
+      <!-- Story 3 -->
+      <div class="story-card">
+        <div class="card-img">Café · Three Friends</div>
+        <div class="card-body">
+          <h2>The Friend Who Sat Too Close</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge long">Long · ~20 min</span>
+            <span data-en="Friendship & Crush Drama · Post-Midterm Regrets" data-zh="友情與暗戀糾葛 · 考完試的決裂之夜">Friendship & Crush Drama · Post-Midterm Regrets</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="Your best friend knows you like him. She also has a boyfriend. Somehow she spends the entire night acting single next to him until you snap in a crowded car."
+             data-zh="好友明明知道你暗戀他，而且她自己早有男友。但那一晚她卻整晚坐在他身旁若無其事地調情，直到你在擠滿人的車廂裡徹底理智斷線。">Your best friend knows you like him. She also has a boyfriend. Somehow she spends the entire night acting single next to him until you snap in a crowded car.</p>
+          <a href="story-friend.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+
+      <!-- Story 4 -->
+      <div class="story-card">
+        <div class="card-img">Online Lecture · Bedside Cringe</div>
+        <div class="card-body">
+          <h2>The Unmuted Mic</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge short">Short · ~5 min</span>
+            <span data-en="Virtual Classrooms · Unmuted Disasters" data-zh="線上網課事故 · 忘記關麥克風的大合唱">Virtual Classrooms · Unmuted Disasters</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="Singing your heart out under three layers of blankets at 8:30 AM, completely unaware that your Zoom microphone is glowing bright green to 200 classmates."
+             data-zh="早晨八點半裹在三層被窩裡盡情放聲飆歌，絲毫不知道自己的線上會議麥克風正亮著耀眼的綠光，將歌聲廣播給全班兩百名同學與教授。">Singing your heart out under three layers of blankets at 8:30 AM, completely unaware that your Zoom microphone is glowing bright green to 200 classmates.</p>
+          <a href="story-the-unmuted-mic.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+    
+      <!-- Story 5: The Wrong Seat -->
+      <div class="story-card">
+        <div class="card-img">Bus · Occupied Seat Incident</div>
+        <div class="card-body">
+          <h2>The Wrong Seat</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge short">Short · ~3 min</span>
+            <span data-en="Public Transit · Everyday Cringe" data-zh="大眾交通 · 公車坐錯位尷尬">Public Transit · Everyday Cringe</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="You sit on a bus seat with just an empty jacket draped on it. Two stops later, a guy walks up and says 'That’s my seat' with zero emotion."
+             data-zh="你在擁擠的公車上坐進了一個只搭著外套的空位。兩站後，一個男生面無表情地走過來，平淡地說了句：『那是我的位子。』">You sit on a bus seat with just an empty jacket draped on it. Two stops later, a guy walks up and says 'That’s my seat' with zero emotion.</p>
+          <a href="story-wrong-seat.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+
+      <!-- Story 6: The Group Chat Screenshot -->
+      <div class="story-card">
+        <div class="card-img">Group Chat · Accidental Screenshot</div>
+        <div class="card-body">
+          <h2>The Group Chat Screenshot</h2>
+          <div class="meta" style="margin-bottom: 8px;">
+            <span class="badge medium">Medium · ~6 min</span>
+            <span data-en="Friendship & Digital Cringe · Accidental Send" data-zh="友情與數位尷尬 · 手滑發錯大群組">Friendship & Digital Cringe · Accidental Send</span>
+          </div>
+          <div class="feature-tags">
+            <span class="tag highlight">🎧 Voice Audio</span>
+            <span class="tag">📖 Vocab Notes</span>
+            <span class="tag">🌐 Translation</span>
+            <span class="tag">💡 3-Question Quiz</span>
+          </div>
+          <p data-en="You mean to show your friend a message in the library, your thumb slips, and you accidentally post private gossip screenshots directly into the 50-person main chat."
+             data-zh="你在圖書館想拿手機給朋友看訊息，拇指一滑，不小心把私底下的吐槽截圖直接發進了有五十名同學的班級大群組……">You mean to show your friend a message in the library, your thumb slips, and you accidentally post private gossip screenshots directly into the 50-person main chat.</p>
+          <a href="story-group-chat.html" class="btn" data-en="Read Story →" data-zh="閱讀故事 →">Read Story →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TAB 2: REAL TALK / TOPIC MUSINGS (NOT ACADEMIC / FUNNY & RELATABLE) -->
+    <div id="tab-realtalk" class="tab-pane">
+      <div class="debate-card">
+        <span class="debate-badge" data-en="💭 Real Talk · Topic #01" data-zh="💭 熱門話題隨筆 #01">💭 Real Talk · Topic #01</span>
+        <h2 class="debate-title" data-en="Should Schools Actually Ban Smartphones, or Are We Just Kidding Ourselves?"
+            data-zh="學校真的該禁手機，還是我們只是在自欺欺人？">Should Schools Actually Ban Smartphones, or Are We Just Kidding Ourselves?</h2>
+        <p class="debate-desc" data-en="An honest, no-nonsense look at what actually happens when you try to separate teenagers from their screens."
+           data-zh="不講大道理，用普通人的大白話聊聊：硬要把學生和螢幕拆開到底現不現實。">An honest, no-nonsense look at what actually happens when you try to separate teenagers from their screens.</p>
+
+        <div class="debate-grid">
+          <!-- The Argument For (Pros) -->
+          <div class="debate-column pros">
+            <div class="col-header" data-en="👍 Why It Actually Makes Sense" data-zh="👍 贊成者的真心話（確實有道理的地方）">👍 Why It Actually Makes Sense</div>
+            <ul class="debate-points">
+              <li><span data-en="None of us have self-control: Let's be real—the second a teacher starts talking about quadratic equations, no human alive can resist checking a buzzing pocket."
+                        data-zh="誰都別高估自己的自律：說真的，數學老師一開始講微積分，這世界上根本沒人能忍住不去摸口袋裡震動的手機。">None of us have self-control: Let's be real—the second a teacher starts talking about quadratic equations, no human alive can resist checking a buzzing pocket.</span></li>
+              <li><span data-en="Forces people to actually talk: Without phones, lunch breaks stop looking like a waiting room full of zombies staring at blue screens. People actually make eye contact."
+                        data-zh="逼大家開口說人話：沒有手機，午餐時間才不會像急診室候診一樣，三十個人圍著桌子像喪屍盯著藍光。大家才會真正抬頭看人。">Forces people to actually talk: Without phones, lunch breaks stop looking like a waiting room full of zombies staring at blue screens. People actually make eye contact.</span></li>
+              <li><span data-en="Removes the camera paranoia: Nobody has to worry about someone sneaking an unflattering 3-second video of them eating a messy burrito to post online."
+                        data-zh="告別鏡頭焦慮症：至少不用神經兮兮地擔心，自己狼吞虎嚥吃個三明治會被隔壁同學偷拍成迷因發到網上。">Removes the camera paranoia: Nobody has to worry about someone sneaking an unflattering 3-second video of them eating a messy burrito to post online.</span></li>
+            </ul>
+          </div>
+
+          <!-- The Argument Against (Cons) -->
+          <div class="debate-column cons">
+            <div class="col-header" data-en="👎 Why It's Kinda Ridiculous" data-zh="👎 反對者的吐槽（不切實際的地方）">👎 Why It's Kinda Ridiculous</div>
+            <ul class="debate-points">
+              <li><span data-en="Turns everyone into undercover spies: Banning phones doesn't stop phone use. It just teaches kids how to type 60 words per minute inside their hoodie pocket without looking."
+                        data-zh="只會把學生逼成臥底特工：全面禁止根本擋不住，只會讓學生練成在帽衫口袋裡盲打一分鐘六十個字的神技。">Turns everyone into undercover spies: Banning phones doesn't stop phone use. It just teaches kids how to type 60 words per minute inside their hoodie pocket without looking.</span></li>
+              <li><span data-en="Real-life logistics still exist: If practice gets canceled, your ride is late, or your mom needs to know where you are, good luck trying to find a hallway payphone in 2026."
+                        data-zh="生活突發狀況真實存在：如果課後訓練取消、老媽臨時晚到接送，在2026年你上哪去學校走廊找投幣式公共電話？">Real-life logistics still exist: If practice gets canceled, your ride is late, or your mom needs to know where you are, good luck trying to find a hallway payphone in 2026.</span></li>
+              <li><span data-en="The real world won't lock your phone: Once you start college or get an office job, nobody collects your phone in a plastic pouch. You either learn boundaries, or you fail."
+                        data-zh="外面的現實世界可沒人幫你收手機：畢業讀大學或去上班，沒人會拿塑膠袋幫你鎖手機。你必須自己學會節制，否則遲早要吃大虧。">The real world won't lock your phone: Once you start college or get an office job, nobody collects your phone in a plastic pouch. You either learn boundaries, or you fail.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="useful-phrases">
+          <h4 data-en="☕ The Honest Takeaway:" data-zh="☕ 普通人的大實話總結：">☕ The Honest Takeaway:</h4>
+          <p style="color:#555; line-height:1.65; font-size:0.95rem;"
+             data-en="Treating phones like contraband is the lazy option—it's like putting tape over your car's 'check engine' light and pretending the engine is fine. It takes way more effort to teach people how to sit with boredom without panicking, but that's the only skill that actually matters outside of high school."
+             data-zh="把手機當違禁品收起來是最省事的懶辦法——這就像儀表板亮紅燈時用膠布貼住，假裝引擎沒事一樣。教一個人學會面對無聊而不焦慮地掏手機確實很難，但那才是離開校園後真正能在現實世界派上用場的能力。">Treating phones like contraband is the lazy option—it's like putting tape over your car's 'check engine' light and pretending the engine is fine. It takes way more effort to teach people how to sit with boredom without panicking, but that's the only skill that actually matters outside of high school.</p>
+        </div>
+      </div>
+
+      <div class="placeholder-card" style="padding: 22px 16px;">
+        <p style="font-weight: 600; color: #444;" 
+           data-en="💡 Next topics coming up: 'Is AI making our brains lazy, or are we just using it as a scapegoat?', 'Why group project freeloaders never change', and 'The unwritten rules of split bills.'"
+           data-zh="💡 下期隨筆話題籌備中：AI 是真的讓人變懶還是成了替罪羊？為什麼小組專題總有人搭便車？以及朋友聚餐AA制的潛規則！">💡 Next topics coming up: 'Is AI making our brains lazy, or are we just using it as a scapegoat?', 'Why group project freeloaders never change', and 'The unwritten rules of split bills.'</p>
+      </div>
+    </div>
+
+    <!-- TAB 3: ANONYMOUS DIARY / CONFESSION WALL -->
+    <div id="tab-diary" class="tab-pane">
+      <div class="diary-card-box">
+        <h2 class="diary-form-title" data-en="📔 Anonymous Diary & Mood Wall" data-zh="📔 匿名心情日記與日常樹洞">📔 Anonymous Diary & Mood Wall</h2>
+        <p class="diary-form-desc" data-en="Had an awkward moment today? Spilled coffee on someone? Vent it out anonymously. No login required."
+           data-zh="今天遇到什麼無地自容的小事？咖啡打翻在別人身上？歡迎匿名寫下你的心情日記或尷尬經歷。">Had an awkward moment today? Spilled coffee on someone? Vent it out anonymously. No login required.</p>
+
+        <form id="diaryForm">
+          <div class="diary-input-group">
+            <label for="diaryAuthor" data-en="Pseudonym (Optional):" data-zh="暱稱（選填）：">Pseudonym (Optional):</label>
+            <input type="text" id="diaryAuthor" class="diary-input" placeholder="e.g. ClumsyPenguin, SleepyCrow" maxlength="30">
+          </div>
+          <div class="diary-input-group">
+            <label for="diaryCategory" data-en="Category:" data-zh="分類標籤：">Category:</label>
+            <select id="diaryCategory" class="diary-input">
+              <option value="🏫 School & Campus">🏫 School & Campus (校園生活)</option>
+              <option value="☕ Dating & Crushes">☕ Dating & Crushes (約會暗戀)</option>
+              <option value="🚌 Commute & Transit">🚌 Commute & Transit (通勤路上)</option>
+              <option value="📱 Texting & Social">📱 Texting & Social (聊天傳訊)</option>
+              <option value="👨‍👩‍👧 Family Chaos">👨‍👩‍👧 Family Chaos (家庭日常)</option>
+              <option value="💼 Workplace">💼 Workplace (職場生活)</option>
+            </select>
+          </div>
+          <div class="diary-input-group">
+            <label for="diaryText" data-en="What happened today?" data-zh="今天發生了什麼事？">What happened today?</label>
+            <textarea id="diaryText" class="diary-input" placeholder="Spill the tea..." required maxlength="1000"></textarea>
+          </div>
+          <button type="submit" class="diary-submit-btn" data-en="Post Entry ✨" data-zh="發佈日記 ✨">Post Entry ✨</button>
+        </form>
+      </div>
+
+      <!-- Feed Container -->
+      <div id="diaryFeed"></div>
+    </div>
+
+    <!-- TAB 4: LIFE LESSONS & FABLES -->
+    <div id="tab-fables" class="tab-pane">
+      <div class="placeholder-card">
+        <div class="icon">📖</div>
+        <h3 data-en="Life Lessons & Parables" data-zh="生活哲理與寓言">Life Lessons & Parables</h3>
+        <p data-en="Short, honest observations about human nature and the quiet habits that shape our lives."
+           data-zh="短小精悍的人性觀察與生活雜感，深入淺出。即將上線！">Short, honest observations about human nature and the quiet habits that shape our lives.</p>
+      </div>
+
+      <div class="story-card" style="opacity: 0.88;">
+        <div class="card-img">Coming Soon · Preview</div>
+        <div class="card-body">
+          <h2>The Two Frogs in the Well</h2>
+          <div class="meta">
+            <span class="badge short">Short · ~3 min</span>
+            <span data-en="Perspective & Comfort Zones" data-zh="視角與舒適圈">Perspective & Comfort Zones</span>
+          </div>
+          <p data-en="A fresh take on an old tale: why we convince ourselves that our tiny puddle is the whole wide universe."
+             data-zh="換個角度讀老寓言：為什麼我們總容易說服自己，眼前的一方小水窪就是整個遼闊的世界。">A fresh take on an old tale: why we convince ourselves that our tiny puddle is the whole wide universe.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: LATE NIGHT THOUGHTS / BEDTIME -->
+    <div id="tab-bedtime" class="tab-pane">
+      <div class="placeholder-card">
+        <div class="icon">🌙</div>
+        <h3 data-en="Late Night Thoughts" data-zh="深夜隨筆漫談">Late Night Thoughts</h3>
+        <p data-en="Calming, quiet pieces written for those 2 AM hours when the world has stopped talking."
+           data-zh="寫給凌晨兩點安靜時分的舒緩隨筆，適合放鬆心緒或睡前聆聽。">Calming, quiet pieces written for those 2 AM hours when the world has stopped talking.</p>
+      </div>
+
+      <div class="story-card" style="opacity: 0.88;">
+        <div class="card-img">Coming Soon · Preview</div>
+        <div class="card-body">
+          <h2>The 2:00 AM Brain</h2>
+          <div class="meta">
+            <span class="badge medium">Medium · ~6 min</span>
+            <span data-en="Quiet Thoughts · Overthinking" data-zh="深夜思緒 · 關於胡思亂想">Quiet Thoughts · Overthinking</span>
+          </div>
+          <p data-en="Why everything feels twice as dramatic when everyone else is asleep, and why tomorrow morning always makes it smaller."
+             data-zh="為什麼在全人類都睡著的深夜，每件小事都會被無限放大？而晨光又為何總能撫平一切。">Why everything feels twice as dramatic when everyone else is asleep, and why tomorrow morning always makes it smaller.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p data-en="Musings · Everyday Stories & Thought Journal" data-zh="Musings · 隨筆生活故事與心靈記錄">Musings · Everyday Stories & Thought Journal</p>
+      <p style="margin-top: 4px; font-size: 0.8rem;" data-en="Built with voice audio & reader tools" data-zh="內置語音朗讀與雙語閱讀輔助">Built with voice audio & reader tools</p>
+    </footer>
+  </div>
+
+  <script>
+    // Tab switcher logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.dataset.tab;
+          tabButtons.forEach(b => b.classList.remove('active'));
+          tabPanes.forEach(p => p.classList.remove('active'));
+
+          btn.classList.add('active');
+          const targetPane = document.getElementById(targetId);
+          if (targetPane) targetPane.classList.add('active');
+        });
+      });
+
+      // Anonymous Diary Logic
+      const defaultEntries = [
+        {
+          id: 'def_1',
+          author: 'SubwaySurfer',
+          category: '🚌 Commute & Transit',
+          text: 'Waved back enthusiastically with both hands at a smiling guy across the train platform for 30 whole seconds, before realizing he was waving to his fiancée directly behind me.',
+          time: '3 hours ago',
+          likes: 142
+        },
+        {
+          id: 'def_2',
+          author: 'CaffeineGhost',
+          category: '📱 Texting & Social',
+          text: 'Accidentally sent a screenshot of a dramatic text exchange directly back to the very person who sent it to me, with the caption "Can you believe this nonsense?"',
+          time: 'Yesterday',
+          likes: 389
+        },
+        {
+          id: 'def_3',
+          author: 'LibraryScholar',
+          category: '🏫 School & Campus',
+          text: 'Pushed a glass library door with my entire body weight in front of thirty silent students, while making unbroken eye contact with the bold letters that said PULL.',
+          time: '2 days ago',
+          likes: 95
+        }
+      ];
+
+      function getStoredDiary() {
+        const stored = localStorage.getItem('musings_diary_entries');
+        return stored ? JSON.parse(stored) : defaultEntries;
+      }
+
+      function saveDiary(entries) {
+        localStorage.setItem('musings_diary_entries', JSON.stringify(entries));
+      }
+
+      function renderDiary() {
+        const feed = document.getElementById('diaryFeed');
+        if (!feed) return;
+        const entries = getStoredDiary();
+        feed.innerHTML = entries.map(entry => `
+          <div class="diary-item">
+            <div class="diary-item-header">
+              <span class="diary-author">👤 ${escapeHtml(entry.author || 'Anonymous')}</span>
+              <span class="diary-category-tag">${escapeHtml(entry.category || 'General')}</span>
+            </div>
+            <div class="diary-body">${escapeHtml(entry.text)}</div>
+            <div class="diary-actions">
+              <button class="like-btn" data-id="${entry.id}">❤️ ${entry.likes || 0} Likes</button>
+              <span style="font-size:0.75rem; color:#888;">${entry.time || 'Recently'}</span>
+            </div>
+          </div>
+        `).join('');
+
+        feed.querySelectorAll('.like-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.dataset.id;
+            const currentEntries = getStoredDiary();
+            const target = currentEntries.find(e => e.id === id);
+            if (target) {
+              target.likes = (target.likes || 0) + 1;
+              saveDiary(currentEntries);
+              renderDiary();
+            }
+          });
+        });
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+
+      const form = document.getElementById('diaryForm');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const authorInput = document.getElementById('diaryAuthor');
+          const catInput = document.getElementById('diaryCategory');
+          const textInput = document.getElementById('diaryText');
+
+          const newEntry = {
+            id: 'user_' + Date.now(),
+            author: authorInput.value.trim() || 'Anonymous',
+            category: catInput.value,
+            text: textInput.value.trim(),
+            time: 'Just now',
+            likes: 1
+          };
+
+          const entries = getStoredDiary();
+          entries.unshift(newEntry);
+          saveDiary(entries);
+
+          form.reset();
+          renderDiary();
+        });
+      }
+
+      renderDiary();
+    });
+  </script>
+  <script src="story-engine.js"></script>
+</body>
+</html>
